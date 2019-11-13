@@ -19,7 +19,8 @@ import PhoneIcon from '@material-ui/icons/Phone';
 const useStyles = makeStyles({
     container: {
         paddingTop: '20px',
-        color: open => !open ? "#d4d4dc" : "#d4d4dc"
+        color: open => !open ? "#d4d4dc" : "#d4d4dc",
+        
     },
     arrowDiv: {
         display: 'flex',
@@ -67,7 +68,7 @@ const SideBar = ({props, open, handleDrawerClose, handleDrawerOpen}) => {
         {!open ? (<Divider style={{backgroundColor: "#393f4d", opacity: '.7', height: '2px'}}/>):(<Divider style={{backgroundColor: "#feda6a", opacity: '.7', height: '2px'}}/>)}
         <List>
             <NavLink to="/" style={{textDecoration: 'none', color: 'inherit'}}>
-            <div className={classes.iconDiv}>
+            <div className={classes.iconDiv}> 
                 <HomeIcon className={classes.menuButton}/>
                 <p style={{fontSize: '1.2rem'}}>Home</p>
             </div>

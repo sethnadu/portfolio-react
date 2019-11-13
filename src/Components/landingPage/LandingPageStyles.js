@@ -18,12 +18,11 @@ export const LandingBackground = styled.div `
 export const Cover = styled.div `
     height: 100vh;
     width: 100%;
-    background-color: rgb(105,105,105, 0.8);
+    background-color: rgb(57,63,77);
+    opacity: .8;
     position: absolute;
-
-
 `
-
+  
 export const MiddleDiv = styled.div `
     display: flex;
     flex-direction: column;
