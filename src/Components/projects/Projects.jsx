@@ -2,6 +2,7 @@ import React from 'react';
 
 //Tab Imports
 import Skill from './tabs/Skills'
+import Individual from './tabs/Individual'
 
 //Material UI
 import PropTypes from 'prop-types';
@@ -111,7 +112,7 @@ const Projects = ({props, open}) => {
             <Skill phoneSize = {phoneSize} open = {open}/>
             </TabPanel>
             <TabPanel value={value} index={1} dir={theme.direction}>
-                Item Two
+                <Individual phoneSize = {phoneSize} open = {open} />
             </TabPanel>
             <TabPanel value={value} index={2} dir={theme.direction}>
                 Item Three
