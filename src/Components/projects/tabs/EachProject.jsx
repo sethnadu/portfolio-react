@@ -42,7 +42,7 @@ const useStyles = makeStyles({
     height: '50px',
   },
   gitHubIcon: {
-    fontSize: '3rem',
+    fontSize: '3.1rem',
     color: '#feda6a'
   },
 
@@ -72,12 +72,12 @@ export default function EachProject({el}) {
         </div>   
         </CardContent>
       <CardActions>
-        <Button size="small" color="primary">
-          {el.siteIcon}
-        </Button>
-        <Button size="small" color="primary">
-          <GitHubIcon className={classes.gitHubIcon}/>
-        </Button>
+        <button style={{backgroundColor: '#1d1e22', border: 'none'}}>
+          <a href={el.site} alt='site'>{el.siteIcon}</a>
+        </button>
+        <button style={{backgroundColor: '#1d1e22', border: 'none'}}>
+          <a href={el.github} alt="github"><GitHubIcon className={classes.gitHubIcon}/></a>
+        </button>
       </CardActions>
     </Card>
   );
