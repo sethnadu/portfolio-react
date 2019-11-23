@@ -16,6 +16,10 @@ const Routes = () => {
             (
             <MainPage {...routeProps} page={'projects'}/>
             )} />
+        <Route exact path = '/resume' render={routeProps =>
+            (
+            <MainPage {...routeProps} page={'resume'}/>
+            )} />
         </Switch>
     )
 }

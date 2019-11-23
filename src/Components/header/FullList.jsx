@@ -93,7 +93,7 @@ const FullList = ({props, open, handleDrawerClose, handleDrawerOpen}) => {
                 </div>
                 </NavLink>
 
-                <NavLink to="/" style={{textDecoration: 'none', color: 'inherit'}}>
+                <NavLink to="/resume" style={{textDecoration: 'none', color: 'inherit'}}>
                 <div className={classes.iconDiv}>
                     <DescriptionIcon className={classes.menuButton}/>
                     <p style={{fontSize: '1.0rem', margin: 0}}>Resume</p>

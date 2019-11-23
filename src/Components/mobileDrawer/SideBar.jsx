@@ -88,7 +88,7 @@ const SideBar = ({props, open, handleDrawerClose, handleDrawerOpen}) => {
             </div>
             </NavLink>
 
-            <NavLink to="/" style={{textDecoration: 'none', color: 'inherit'}}>
+            <NavLink to="/resume" style={{textDecoration: 'none', color: 'inherit'}}>
             <div className={classes.iconDiv}>
                 <DescriptionIcon className={classes.menuButton}/>
                 <p style={{fontSize: '1.2rem'}}>Resume</p>
