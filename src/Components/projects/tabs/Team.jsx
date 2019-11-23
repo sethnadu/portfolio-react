@@ -1,7 +1,7 @@
 import React from 'react';
 
-// Individual Website Data
-import {IndividualData} from './ProjectData/IndividualData';
+// Team Website Data
+import {TeamData} from './ProjectData/TeamData';
 
 //Styled Component Imports
 import {
@@ -12,11 +12,11 @@ import {
 import EachProject from "./EachProject";
 
 
-const Individual = (props) => {
+const Team = (props) => {
     console.log(props)
     return (
         <Container>
-            {IndividualData.map(el => {
+            {TeamData.map(el => {
                return <EachProject el = {el} phoneSize = {props.phoneSize} open = {props.open}/>
             })}
 
@@ -24,4 +24,4 @@ const Individual = (props) => {
     )
 }
 
-export default Individual;
+export default Team;

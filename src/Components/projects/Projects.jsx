@@ -3,6 +3,7 @@ import React from 'react';
 //Tab Imports
 import Skill from './tabs/Skills'
 import Individual from './tabs/Individual'
+import Team from './tabs/Team'
 
 //Material UI
 import PropTypes from 'prop-types';
@@ -48,7 +49,7 @@ function a11yProps(index) {
 }
 const useStyles = makeStyles(theme => ({
   root: {
-    margin: "0 auto"
+    margin: "0 auto",
   },
   appBar: {
       backgroundColor: '#393f4d',
@@ -111,11 +112,11 @@ const Projects = ({props, open}) => {
             <TabPanel value={value} index={0} dir={theme.direction}>
             <Skill phoneSize = {phoneSize} open = {open}/>
             </TabPanel>
-            <TabPanel value={value} index={1} dir={theme.direction}>
+            <TabPanel value={value} index={1} dir={theme.direction} >
                 <Individual phoneSize = {phoneSize} open = {open} />
             </TabPanel>
             <TabPanel value={value} index={2} dir={theme.direction}>
-                Item Three
+                <Team phoneSize = {phoneSize} open = {open} />
             </TabPanel>
             </SwipeableViews>
         </div>
