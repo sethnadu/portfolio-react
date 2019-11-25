@@ -21,16 +21,38 @@ import {
     SecondSectionCareerMobile,
     SecondSectionContactMobile,
     ATag,
-    ContactListItem
+    ContactListItem,
+    EducationDiv,
+    SchoolDiv,
+    EducationTitle,
+    HL,
+    SkillsDiv,
+    EducationDivMobile,
+    ProfessionalDiv,
+    WorkDiv,
+    DatesDiv,
+    ProfessionalTitle,
+    WorkDivMobile,
+    DatesDivMobile
 
 } from './ResumeStyles'
 
 //Material UI Imports
 import useMediaQuery from "@material-ui/core/useMediaQuery"
+//Material UI Icons
+import DescriptionIcon from '@material-ui/icons/Description';
 
 const Resume = ({props, open}) => {
     const phoneSize = useMediaQuery("(max-width:700px)"); 
     return (
+        <>
+        {open ? (
+            <div style={{margin: "80px auto 20px auto", width: "100%", display: "flex", flexDirection: 'column', justifyContent: "center", alignItems: "center"}}>
+            <h2 style={{color: '#feda6a'}}>Seth Nadu</h2> 
+            <DescriptionIcon style={{color: "white", fontSize: "3.3rem"}}/>
+            <h3 style={{textAlign: "center", color: '#feda6a'}}>Resume</h3>
+            </div>
+        ) : (
         <Container>
             <TopDiv>
                 <NameDiv>
@@ -95,16 +117,137 @@ const Resume = ({props, open}) => {
                     </SecondSectionContactMobile>
                 </SecondDivMobile>
             )}
-            <div>
+            {!phoneSize ? (
+            <SecondDiv>
+                <EducationDiv>
+                    <EducationTitle>
+                        <h3>Education</h3>
+                    </EducationTitle>
+                    <SchoolDiv>
+                        <p style={{fontWeight: "bold", marginBottom: "-10px"}}>LAMBDA SCHOOL ONLINE</p>
+                        <p style={{fontStyle: "Italic", marginBottom: "-10px"}}>San Francisco, CA</p>
+                        <p>Computer Science Full Stack Web Development</p>
+                        <p style={{fontWeight: "bold", marginBottom: "-10px"}}>SOLANCO HIGH SCHOOL</p>
+                        <p style={{fontStyle: "Italic", marginBottom: "-10px"}}>Lancaster, PA</p>
+                        <p>High School Diploma (Jun 2013)</p>
+                    </SchoolDiv>
+                </EducationDiv>
+                <HL />
+                <EducationDiv>
+                    <EducationTitle style={{backgroundColor: "black", color: '#feda6a'}}>
+                        <h3>Additional Skills</h3>
+                    </EducationTitle>
+                        <SkillsDiv>
+                            <div>
+                                <p>Git</p>
+                                <p>Node</p>
+                                <p>LESS</p>
+                                <p>HTML5</p>
+                                <p>Redux</p>
+                                <p>JavaScript</p>
+                                <p>Semantic</p>    
+                            </div>
+                            <div>
+                                <p>Java</p>
+                                <p>Spring</p>
+                                <p>React</p>
+                                <p>Postgres</p>
+                                <p>BootStrap</p>
+                                <p>Material-UI</p>
+                                <p>Async Code</p>    
+                            </div>
+                        </SkillsDiv>
+                </EducationDiv>
+            </SecondDiv>
+            ) : (
+                <SecondDivMobile>
+                <EducationDivMobile>
+                    <EducationTitle>
+                        <h3>Education</h3>
+                    </EducationTitle>
+                    <SchoolDiv>
+                        <p style={{fontWeight: "bold", marginBottom: "-10px"}}>LAMBDA SCHOOL ONLINE</p>
+                        <p style={{fontStyle: "Italic", marginBottom: "-10px"}}>San Francisco, CA</p>
+                        <p style={{textAlign: 'center'}}>Computer Science Full Stack Web Development</p>
+                        <p style={{fontWeight: "bold", marginBottom: "-10px"}}>SOLANCO HIGH SCHOOL</p>
+                        <p style={{fontStyle: "Italic", marginBottom: "-10px"}}>Lancaster, PA</p>
+                        <p>High School Diploma (Jun 2013)</p>
+                    </SchoolDiv>
+                </EducationDivMobile>
+                <HL />
+                <EducationDivMobile>
+                    <EducationTitle style={{backgroundColor: "black", color: '#feda6a'}}>
+                        <h3>Additional Skills</h3>
+                    </EducationTitle>
+                        <SkillsDiv>
+                            <div>
+                                <p>Git</p>
+                                <p>Node</p>
+                                <p>LESS</p>
+                                <p>HTML5</p>
+                                <p>Redux</p>
+                                <p>JavaScript</p>
+                                <p>Semantic</p>    
+                            </div>
+                            <div>
+                                <p>Java</p>
+                                <p>Spring</p>
+                                <p>React</p>
+                                <p>Postgres</p>
+                                <p>BootStrap</p>
+                                <p>Material-UI</p>
+                                <p>Async Code</p>    
+                            </div>
+                        </SkillsDiv>
+                </EducationDivMobile>
+            </SecondDivMobile>
+            )}
+            {!phoneSize ? (
+            <ProfessionalDiv>
                 <div>
-                    
+                    <ProfessionalTitle>Professional Experience</ProfessionalTitle>    
                 </div>
+                <WorkDiv>
+                    <DatesDiv>
+                        <p style = {{borderBottom: "2px solid #feda6a", width: "100%"}}>Dec 2015 - May 2019</p>   
+                    </DatesDiv>
+                    <SecondSectionCareer style={{paddingTop: "0px"}}>
+                        <p style={{fontWeight: "bold", marginBottom: "-10px"}}>COMPUTER TECHNICIAN MANAGER</p>
+                        <p style={{fontStyle: "Italic", marginBottom: "-10px"}}>Sycamore International, West Grove, PA</p>
+                        <ul>
+                            <li style={{textAlign: 'left'}}>Refurbished and Recycled Form Factors ranging from PC's to Phones.</li>
+                            <li style={{textAlign: 'left'}}>I managed a small group of Computer Technicians and would organize, diagnose issues, and train employees</li>
+                            <li style={{textAlign: 'left'}}>Worked with hardware from both Apple and Microsoft</li>
+                        </ul>    
+                    </SecondSectionCareer>
+                </WorkDiv>
+            </ProfessionalDiv>
+            ) : (
+                <ProfessionalDiv>
                 <div>
-
+                    <ProfessionalTitle>Professional Experience</ProfessionalTitle>    
                 </div>
-            </div>
+                <WorkDivMobile>
+                    <DatesDivMobile>
+                        <p style = {{borderBottom: "2px solid #feda6a", width: "100%"}}>Dec 2015 - May 2019</p>   
+                    </DatesDivMobile>
+                    <SecondSectionCareerMobile style={{paddingTop: "0px"}}>
+                        <p style={{fontWeight: "bold", marginBottom: "-10px"}}>COMPUTER TECHNICIAN MANAGER</p>
+                        <p style={{fontStyle: "Italic", marginBottom: "-10px"}}>Sycamore International, West Grove, PA</p>
+                        <ul>
+                            <li style={{textAlign: 'left'}}>Refurbished and Recycled Form Factors ranging from PC's to Phones.</li>
+                            <li style={{textAlign: 'left'}}>I managed a small group of Computer Technicians and would organize, diagnose issues, and train employees</li>
+                            <li style={{textAlign: 'left'}}>Worked with hardware from both Apple and Microsoft</li>
+                        </ul>    
+                    </SecondSectionCareerMobile>
+                </WorkDivMobile>
+            </ProfessionalDiv>
+            )}
 
         </Container>
+       
+        )}
+         </>
     )
 }
 
