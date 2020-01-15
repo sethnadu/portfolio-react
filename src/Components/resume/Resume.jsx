@@ -142,6 +142,7 @@ const Resume = ({props, open}) => {
                                 <p>Git</p>
                                 <p>Node</p>
                                 <p>LESS</p>
+                                <p>Python</p>
                                 <p>HTML5</p>
                                 <p>Redux</p>
                                 <p>JavaScript</p>
@@ -151,6 +152,7 @@ const Resume = ({props, open}) => {
                                 <p>Java</p>
                                 <p>Spring</p>
                                 <p>React</p>
+                                <p>Django</p>
                                 <p>Postgres</p>
                                 <p>BootStrap</p>
                                 <p>Material-UI</p>

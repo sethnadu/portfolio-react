@@ -2,7 +2,7 @@ import React from 'react';
 import FullList from './FullList';
 import Content from "../mainPage/Content"
 
-//Material UI Imports
+// Material UI Imports
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
     color: '#feda6a',
     boxShadow: 'none',
     borderBottom:'2px solid #1d1e22', 
-    transition: theme.transitions.create(['width', 'margin'], {
+    transition: theme.transitions.create(['height', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
@@ -47,7 +47,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor:"#1d1e22",
     borderBottom:'2px solid #d4d4dc', 
     color: '#feda6a',
-    transition: theme.transitions.create(['width', 'margin'], {
+    transition: theme.transitions.create(['height', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
