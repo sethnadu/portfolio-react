@@ -53,10 +53,11 @@ const Resume = ({props, open}) => {
         {open && phoneSize ? (
             <div style={{margin: "80px auto 20px auto", width: "100%", display: "flex", flexDirection: 'column', justifyContent: "center", alignItems: "center"}}>
             <h2 style={{color: '#feda6a'}}>Seth Nadu</h2>
-            <a href={Resume_PDF} alt="Seth Nadu Resume" download="Seth_Nadu_Resume">
+            <a href={Resume_PDF} alt="Seth Nadu Resume" download="Seth_Nadu_Resume" style={{textDecoration: "none", textAlign: "center"}}>
                 <DescriptionIcon style={{color: "white", fontSize: "3.3rem"}}/>
+                <h3 style={{textAlign: "center", color: '#feda6a', marginBottom:"-10px"}}>Download</h3>  
+                <h3 style={{textAlign: "center", color: '#feda6a'}}>Resume</h3>   
             </a>
-            <h3 style={{textAlign: "center", color: '#feda6a'}}>Resume</h3>   
             </div>
         ) : (
         <>
