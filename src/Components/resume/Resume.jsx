@@ -1,10 +1,13 @@
 import React from 'react'
+import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer';
 
 //Material UI Icons
 import MailIcon from '@material-ui/icons/Mail';
 import PhoneIcon from '@material-ui/icons/Phone';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import WebIcon from '@material-ui/icons/Web';
+
+import Resume_PDF from '../../Assets/Resume.pdf'
 
 //Styled Component Import
 import {
@@ -44,15 +47,25 @@ import DescriptionIcon from '@material-ui/icons/Description';
 
 const Resume = ({props, open}) => {
     const phoneSize = useMediaQuery("(max-width:700px)"); 
+      
     return (
         <>
         {open && phoneSize ? (
             <div style={{margin: "80px auto 20px auto", width: "100%", display: "flex", flexDirection: 'column', justifyContent: "center", alignItems: "center"}}>
-            <h2 style={{color: '#feda6a'}}>Seth Nadu</h2> 
-            <DescriptionIcon style={{color: "white", fontSize: "3.3rem"}}/>
-            <h3 style={{textAlign: "center", color: '#feda6a'}}>Resume</h3>
+            <h2 style={{color: '#feda6a'}}>Seth Nadu</h2>
+            <a href={Resume_PDF} alt="Seth Nadu Resume" download="Seth_Nadu_Resume">
+                <DescriptionIcon style={{color: "white", fontSize: "3.3rem"}}/>
+            </a>
+            <h3 style={{textAlign: "center", color: '#feda6a'}}>Resume</h3>   
             </div>
         ) : (
+        <>
+        {!phoneSize ? 
+        <div style={{margin: "60px 60px -80px 25px", display: "flex", flexDirection: 'row', justifyContent: "flex-end"}}>
+            <a href={Resume_PDF} alt="Seth Nadu Resume" download="Seth_Nadu_Resume" style={{textDecoration:"none"}}>
+                <h3 style={{color: 'white'}}>Download</h3>
+            </a>
+        </div> : null}
         <Container>
             <TopDiv>
                 <NameDiv>
@@ -247,6 +260,7 @@ const Resume = ({props, open}) => {
             )}
 
         </Container>
+        </>
        
         )}
          </>

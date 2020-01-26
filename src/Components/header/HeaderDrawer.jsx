@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
   appBarClose: {
     zIndex: theme.zIndex.drawer + 1,
     backgroundColor:"#1d1e22",
-    borderBottom:'2px solid #d4d4dc', 
+    borderBottom:'2px solid #feda6a', 
     color: '#feda6a',
     transition: theme.transitions.create(['height', 'margin'], {
       easing: theme.transitions.easing.sharp,
@@ -83,7 +83,7 @@ const useStyles = makeStyles(theme => ({
     overflowX: 'hidden',
     overflowY: 'hidden',
     backgroundColor: "#1d1e22",
-    borderBottom: "3px solid #d4d4dc",
+    borderBottom: "3px solid #feda6a", 
     width: "100%",
     height: '0'
   },
