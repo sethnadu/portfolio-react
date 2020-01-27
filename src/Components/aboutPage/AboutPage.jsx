@@ -64,7 +64,7 @@ const useStyles = makeStyles({
         fontFamily: "Open Sans"    
     },
     listItem: {
-        marginLeft: '20px',
+        marginLeft: '10px',
         marginBottom: '10px'
     }
 });

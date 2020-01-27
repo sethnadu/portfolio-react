@@ -75,7 +75,7 @@ const Projects = ({props, open}) => {
     const classes = useStyles();
     const theme = useTheme();
     const phoneSize = useMediaQuery("(max-width:700px)"); 
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = React.useState(1);
 
 
     const handleChange = (event, newValue) => {
@@ -101,8 +101,8 @@ const Projects = ({props, open}) => {
               variant="fullWidth"
               aria-label="full width tabs example"
               >
-              <Tab label="Skills" {...a11yProps(0)} />
-              <Tab label="Individual" {...a11yProps(1)} />
+              <Tab label="Individual" {...a11yProps(0)} />
+              <Tab label="Skills" {...a11yProps(1)} />
               <Tab label="Team" {...a11yProps(2)} />
             </Tabs> : null }
             </AppBar>
@@ -111,11 +111,11 @@ const Projects = ({props, open}) => {
             index={value}
             onChangeIndex={handleChangeIndex}
             >
-            <TabPanel value={value} index={0} dir={theme.direction}>
-            <Skill phoneSize = {phoneSize} open = {open}/>
+            <TabPanel value={value} index={0} dir={theme.direction} >
+              <Individual phoneSize = {phoneSize} open = {open} />
             </TabPanel>
-            <TabPanel value={value} index={1} dir={theme.direction} >
-                <Individual phoneSize = {phoneSize} open = {open} />
+            <TabPanel value={value} index={1} dir={theme.direction}>
+              <Skill phoneSize = {phoneSize} open = {open}/>
             </TabPanel>
             <TabPanel value={value} index={2} dir={theme.direction}>
                 <Team phoneSize = {phoneSize} open = {open} />
