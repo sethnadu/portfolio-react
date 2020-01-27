@@ -270,7 +270,7 @@ const Skills = ({ phoneSize, open }) => {
         <div>
           <h2 className={classes.titleDesktop}>GitHub Contribution Graph</h2>
           <div className={classes.gitHubInformation}>
-            <p style={{ color: "#feda6a" }}>{gitHubInfo && gitHubInfo.login}</p>
+            <a style={{textDecoration: "none"}} href="https://github.com/sethnadu" alt="github"><p style={{ color: "#feda6a" }}>{gitHubInfo && gitHubInfo.login}</p></a>
             <p style={{ color: "#d4d4dc" }}>
               Repos:{" "}
               <span style={{ color: "#feda6a" }}>
