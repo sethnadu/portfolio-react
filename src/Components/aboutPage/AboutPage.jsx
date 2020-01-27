@@ -5,8 +5,8 @@ import Photo from '../../Assets/me.png'
 import { makeStyles } from '@material-ui/core/styles';
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 //Icons
-import { FaReact, FaJava } from 'react-icons/fa';
-import { DiResponsive } from 'react-icons/di';
+import { FaReact} from 'react-icons/fa';
+import { DiJavascript1, DiResponsive } from 'react-icons/di';
 
 
 const useStyles = makeStyles({
@@ -132,9 +132,9 @@ const AboutPage = (props) => {
                     <p>Resuable Components with React</p>
                 </div>
                 <div className = {classes.bottomIcons}>
-                    <FaJava style = {{fontSize: '8rem'}}/>
-                    <p>Java</p>
-                    <p>Work with Java and Java Spring</p>
+                    <DiJavascript1 style = {{fontSize: '8rem',color: 'black'}}/>
+                    <p>Javascript</p>
+                    <p>Strong understanding in Javascript</p>
                 </div>
                 <div className = {classes.bottomIcons} style = {{marginBottom: '20px'}}>
                     <DiResponsive style = {{fontSize: '8rem'}}/>
@@ -149,8 +149,8 @@ const AboutPage = (props) => {
                     <p>React</p>
                 </div>
                 <div className = {classes.bottomIcons}>
-                    <FaJava style = {{fontSize: '3rem'}}/>
-                    <p>Java</p>
+                    <DiJavascript1 style = {{fontSize: '3rem',color: 'black'}}/>
+                    <p>Javascript</p>
                 </div>
                 <div className = {classes.bottomIcons} style = {{marginBottom: '20px'}}>
                     <DiResponsive style = {{fontSize: '3rem'}}/>
@@ -165,9 +165,9 @@ const AboutPage = (props) => {
                     <p style = {{fontSize: '1rem'}}>Resuable Components with React</p>
                 </div>
                 <div className = {classes.bottomIcons}>
-                    <FaJava style = {{fontSize: '8rem'}}/>
-                    <p style = {{fontSize: '1.4rem'}}>Java</p>
-                    <p style = {{fontSize: '1rem'}}>Work with Java and Java Spring</p>
+                    <DiJavascript1 style = {{fontSize: '8rem', color: 'black'}}/>
+                    <p style = {{fontSize: '1.4rem'}}>Javascript</p>
+                    <p style = {{fontSize: '1rem'}}>Strong understanding in Javascript</p>
                 </div>
                 <div className = {classes.bottomIcons}>
                     <DiResponsive style = {{fontSize: '8rem'}}/>
