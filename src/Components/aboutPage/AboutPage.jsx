@@ -61,8 +61,11 @@ const useStyles = makeStyles({
         width: '200px',
         border: '3px solid #feda6a',
         color: "#1d1e22",
-        fontFamily: "Open Sans"
-        
+        fontFamily: "Open Sans"    
+    },
+    listItem: {
+        marginLeft: '20px',
+        marginBottom: '10px'
     }
 });
 
@@ -80,33 +83,43 @@ const AboutPage = (props) => {
             </div>
             <div>
                 {phoneSize ? !props.open ? (
-                    <p style={{textAlign: "left"}} className={classes.paragraphDiv}>Ever since I was a child I have been fascinated with computers, networks and systems. 
+                    <ul style={{textAlign: "left"}} className={classes.paragraphDiv}>
+                    <li className={classes.listItem}>Ever since I was a child I have been fascinated with computers, networks and systems. 
                     Early exposure occurred when I interned at my school's IT department, which provided 
-                    a well rounded, high-level exposure. In parallel, I began focusing on hardware refurbishing 
-                    and software troubleshooting for friends and family. Luckily, I found a role at an 
+                    a well rounded, high-level exposure.</li> 
+                    <li className={classes.listItem}>In parallel, I began focusing on hardware refurbishing 
+                    and software troubleshooting for friends and family.</li>
+                    <li className={classes.listItem}>Luckily, I found a role at an 
                     organization that specialized in refurbishing technology of all form-factors, and in 
                     recycling equipment for future distribution. I worked on software, but mostly on the 
-                    hardware aspect of these form-factors. In the span of three and a half years, my interest 
+                    hardware aspect of these form-factors.</li>
+                    <li className={classes.listItem}>In the span of three and a half years, my interest 
                     in software and coding continued to grow, but now growth for this interest was limited 
-                    in my current role. As I explored knew opportunities to expand my knowledge base, 
-                    I stumbled upon Lambda School to learn everything I can about programming! I'm 
-                    currently exploring everything from front-end to the back-end, from HTML to Java, 
-                    I am ready to launch myself into this career-oriented program to become a Full Stack Developer!</p>
+                    in my current role.</li>
+                    <li className={classes.listItem}> As I explored knew opportunities to expand my knowledge base, 
+                    I stumbled upon Lambda School to learn everything I can about programming!</li>
+                    <li className={classes.listItem}> I'm currently exploring everything from front-end to the back-end, from HTML to Java, 
+                    I am ready to launch myself into this career-oriented program to become a Full Stack Developer!</li></ul>
                 ) : (
                 <p style={{textAlign: "center"}} className={classes.paragraphDiv}>Ever since I was a child I have been fascinated with computers...</p>
                 ): (
-                <p style={{textAlign: "left", marginLeft: '10px'}} className={classes.paragraphDiv}>Ever since I was a child I have been fascinated with computers, networks and systems. 
-                Early exposure occurred when I interned at my school's IT department, which provided 
-                a well rounded, high-level exposure. In parallel, I began focusing on hardware refurbishing 
-                and software troubleshooting for friends and family. Luckily, I found a role at an 
-                organization that specialized in refurbishing technology of all form-factors, and in 
-                recycling equipment for future distribution. I worked on software, but mostly on the 
-                hardware aspect of these form-factors. In the span of three and a half years, my interest 
-                in software and coding continued to grow, but now growth for this interest was limited 
-                in my current role. As I explored knew opportunities to expand my knowledge base, 
-                I stumbled upon Lambda School to learn everything I can about programming! I'm 
-                currently exploring everything from front-end to the back-end, from HTML to Java, 
-                I am ready to launch myself into this career-oriented program to become a Full Stack Developer!</p>
+                    <ul style={{textAlign: "left", marginleft: '10px'}} className={classes.paragraphDiv}>
+                    <li className={classes.listItem}>Ever since I was a child I have been fascinated with computers, networks and systems. 
+                    Early exposure occurred when I interned at my school's IT department, which provided 
+                    a well rounded, high-level exposure.</li> 
+                    <li className={classes.listItem}>In parallel, I began focusing on hardware refurbishing 
+                    and software troubleshooting for friends and family.</li>
+                    <li className={classes.listItem}>Luckily, I found a role at an 
+                    organization that specialized in refurbishing technology of all form-factors, and in 
+                    recycling equipment for future distribution. I worked on software, but mostly on the 
+                    hardware aspect of these form-factors.</li>
+                    <li className={classes.listItem}>In the span of three and a half years, my interest 
+                    in software and coding continued to grow, but now growth for this interest was limited 
+                    in my current role.</li>
+                    <li className={classes.listItem}> As I explored knew opportunities to expand my knowledge base, 
+                    I stumbled upon Lambda School to learn everything I can about programming!</li>
+                    <li className={classes.listItem}> I'm currently exploring everything from front-end to the back-end, from HTML to Java, 
+                    I am ready to launch myself into this career-oriented program to become a Full Stack Developer!</li></ul>
                 )} 
             </div>
         </div>

@@ -2,19 +2,14 @@ import React from "react";
 import { NavLink } from 'react-router-dom';
 
 // Material UI Imports
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Divider from '@material-ui/core/Divider';
-import List from '@material-ui/core/List';
+import { makeStyles} from '@material-ui/core/styles';
+
 // Material UI Icons
 
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 import CodeIcon from '@material-ui/icons/Code';
 import DescriptionIcon from '@material-ui/icons/Description';
-import MailIcon from '@material-ui/icons/Mail';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import PhoneIcon from '@material-ui/icons/Phone';
 
 const useStyles = makeStyles({
     container: {

@@ -1,6 +1,7 @@
 import React from 'react';
 import FullList from './FullList';
 import Content from "../mainPage/Content"
+import { NavLink } from 'react-router-dom';
 
 // Material UI Imports
 import clsx from 'clsx';
@@ -10,18 +11,18 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
 
 // Material UI Icons
-import MenuIcon from '@material-ui/icons/Menu';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import MailIcon from '@material-ui/icons/Mail';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import PhoneIcon from '@material-ui/icons/Phone';
+import HomeIcon from '@material-ui/icons/Home';
+import InfoIcon from '@material-ui/icons/Info';
+import CodeIcon from '@material-ui/icons/Code';
+import DescriptionIcon from '@material-ui/icons/Description';
 
-
-const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -147,6 +148,19 @@ export default function HeaderDrawer({props}) {
             <Typography variant="h6" noWrap style={{fontWeight: 'bold', color: '#d4d4dc', fontFamily: "Open Sans",}} >
                 Seth Nadu
             </Typography>
+            {!open ? (
+              <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', marginLeft: '15px'}}>
+                <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}}>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: '#d4d4dc'}}>About</p>
+                </NavLink>
+                <NavLink to="/projects" style={{textDecoration: 'none', color: 'inherit'}}>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: '#d4d4dc'}}>Projects</p>
+                </NavLink>
+                <NavLink to="/resume" style={{textDecoration: 'none', color: 'inherit'}}>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: '#d4d4dc'}}>Resume</p>
+                </NavLink>
+              </div>
+            ) : null}
             </div>
           <div style={{display: "flex", right: "0px"}}>
             <a href="https://github.com/sethnadu" alt="GitHub" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
