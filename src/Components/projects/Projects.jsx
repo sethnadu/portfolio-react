@@ -77,6 +77,7 @@ const Projects = ({props, open}) => {
     const phoneSize = useMediaQuery("(max-width:700px)"); 
     const [value, setValue] = React.useState(0);
 
+
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
@@ -90,19 +91,20 @@ const Projects = ({props, open}) => {
            <h2 className={!phoneSize ? classes.titleDesktop : classes.titleMobile}>Projects</h2> 
           <div className={classes.root}>
             <AppBar className = {classes.appBar} position="static">
+            {!open ?
             <Tabs
-                value={value}
-                onChange={handleChange}
-                classes={{
-                    indicator: classes.indicator,
-                  }}
-                variant="fullWidth"
-                aria-label="full width tabs example"
-            >
-                <Tab label="Skills" {...a11yProps(0)} />
-                <Tab label="Individual" {...a11yProps(1)} />
-                <Tab label="Team" {...a11yProps(2)} />
-            </Tabs>
+              value={value}
+              onChange={handleChange}
+              classes={{
+                  indicator: classes.indicator,
+                }}
+              variant="fullWidth"
+              aria-label="full width tabs example"
+              >
+              <Tab label="Skills" {...a11yProps(0)} />
+              <Tab label="Individual" {...a11yProps(1)} />
+              <Tab label="Team" {...a11yProps(2)} />
+            </Tabs> : null }
             </AppBar>
             <SwipeableViews
             axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
