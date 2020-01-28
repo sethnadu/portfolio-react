@@ -82,7 +82,7 @@ const Resume = ({props, open}) => {
                 <SecondDiv>
                     <SecondSectionCareer>
                         <SecondTitle>Career Objective</SecondTitle>
-                        <p>Hard-working currently studying Full Stack Web Development at Lambda School Online. Aiming to leverage a proven knowledge of Front End and Back End skills to successfully fill the Computer Programming role at your company. Frequently praised as focused by my peers, I can be relied upon to help your company achieve its goals.</p>
+                        <p>Hard-working currently studying Full Stack Web Development at Lambda School Online, with 3.5 years of work expirence. Aiming to leverage a proven knowledge of Front End and Back End skills to successfully fill the Computer Programming role at your company. Frequently praised as focused by my peers, I can be relied upon to help your company achieve its goals.</p>
                     </SecondSectionCareer>
                     <SecondSectionContact>
                         <SecondTitle>Contact</SecondTitle>

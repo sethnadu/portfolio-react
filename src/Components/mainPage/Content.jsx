@@ -2,6 +2,7 @@ import React from "react";
 import AboutPage from '../aboutPage/AboutPage'
 import Projects from '../projects/Projects'
 import Resume from '../resume/Resume'
+import ResumeCopy from '../resume/ResumeCopy'
 
 const Content = ({props, open}) => {
     console.log(props.page)
@@ -15,7 +16,7 @@ const Content = ({props, open}) => {
                 case('projects'):
                     return <Projects props={props} open={open}/>
                 case('resume'):
-                    return <Resume props={props} open={open}/>
+                    return <ResumeCopy props={props} open={open}/>
                 default:
                     break;
             }
