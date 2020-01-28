@@ -53,6 +53,11 @@ export const BodyDiv = styled.div `
     flex-direction: row;
 `
 
+export const MobileBodyDiv = styled.div `
+    display: flex;
+    flex-direction: column;
+`
+
 export const LeftDiv = styled.div `
     margin-top: 40px;
     width: 30%
@@ -77,6 +82,14 @@ export const SideDiv = styled.div `
 
 `
 
+export const MobileSideDiv = styled.div `
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+
+`
+
 export const MainDiv = styled.div `
     display: flex;
     flex-direction: column;
@@ -88,6 +101,15 @@ export const TitleLine = styled.div `
     border: 1.5px solid #feda6a;
     height: 1px;
     margin-left: 20px; 
+
+`
+
+export const MobileTitleLine = styled.div `
+    width: 50px;
+    border: 1.5px solid #feda6a;
+    height: 1px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 
 `
 export const MainTitleLine = styled.div `
@@ -108,6 +130,13 @@ export const ContactListItem = styled.div `
     align-items: center;
     margin-bottom: 5px;
     justify-content: flex-end;
+`
+
+export const MobileContactListItem = styled.div `
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: flex-start; 
 `
 
 export const RightListItem = styled.div `

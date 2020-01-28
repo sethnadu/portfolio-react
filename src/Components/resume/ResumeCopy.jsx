@@ -28,7 +28,11 @@ import {
    SkillListItem,
    ATag,
    ItalicText,
-   MainSectionheader
+   MainSectionheader,
+   MobileBodyDiv,
+   MobileContactListItem,
+   MobileSideDiv,
+   MobileTitleLine
 
 
 } from './ResumeCopyStyles'
@@ -43,12 +47,13 @@ const ResumeCopy = ({props, open}) => {
         <>
         <Container>
             <NameDiv>
-                <NameH2>SETH NADU</NameH2>
+                {!phoneSize ? <NameH2>SETH NADU</NameH2> : <NameH2 style={{"fontSize": "2.0rem"}}>SETH NADU</NameH2>}
             </NameDiv>
             <JobDiv>
-                <Header>Computer Programming</Header>
+                <Header>Computer Programmer</Header>
                 <Line />
             </JobDiv>
+            {!phoneSize ?
             <BodyDiv>
                 <LeftDiv>
                     <SideDiv>
@@ -87,6 +92,7 @@ const ResumeCopy = ({props, open}) => {
                         <ContactListItem>
                             <ItalicText>Full Stack Web Development</ItalicText>
                         </ContactListItem>
+                        <ItalicText style={{"textAlign": "right", "marginTop": "5px", "marginBottom": "10px"}}>(Feb 2020)</ItalicText>
                         <ContactListItem>
                             <Sectionheader>Solanco High School</Sectionheader>
                         </ContactListItem>
@@ -163,7 +169,7 @@ const ResumeCopy = ({props, open}) => {
                             <ItalicText style={{"marginTop": "0px"}}>A hub of online learning, Didact aims to learn as a community.</ItalicText>
                         </RightListItem>
                         <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>Node.js, Express, React, Redux, Material UI, and Passport.js</p>
-                        <ul style={{'marginRight': "20px", "marginBottom": "20px"}}>
+                        <ul style={{'marginRight': "20px", "marginBottom": "30px"}}>
                             <li style={{textAlign: 'left'}}>Built to the specifications of the stakeholder.</li>
                             <li style={{textAlign: 'left'}}>A Lambda Labs projected created with 6 UI Developers and 1 UX developer in a 2 month timeframe.</li>
                             <li style={{textAlign: 'left'}}>Focused on front-end development with React and Redux, with drag-and-drop functionality and Udemy integration.</li>
@@ -172,10 +178,10 @@ const ResumeCopy = ({props, open}) => {
                             <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://andrewnadurestoration.netlify.com/" alt="Andrew Nadu Restoration">ANDREW NADU RESTORATION</a></MainSectionheader> 
                         </RightListItem>     
                         <RightListItem>
-                            <ItalicText style={{"marginTop": "0px"}}>A restoration portfolio showcasing mansory and restoration projects.</ItalicText>
+                            <ItalicText style={{"marginTop": "0px"}}>A restoration portfolio showcasing masonry and restoration projects.</ItalicText>
                         </RightListItem>
                         <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>HTML, LESS, Javascript</p>
-                        <ul style={{'marginRight': "20px", "marginBottom": "20px"}}>
+                        <ul style={{'marginRight': "20px", "marginBottom": "30px"}}>
                             <li style={{textAlign: 'left'}}>Built to the specifications of the owner.</li>
                             <li style={{textAlign: 'left'}}>An individual project, both developed and designed the layout.</li>
                         </ul>
@@ -183,7 +189,7 @@ const ResumeCopy = ({props, open}) => {
                             <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://github.com/Build-Week-Foodie-Funz/back-end" alt="Seth Nadu Portfolio">Java Backend</a></MainSectionheader> 
                         </RightListItem>     
                         <RightListItem>
-                            <ItalicText style={{"marginTop": "0px"}}>Back End created to store restruant information and users</ItalicText>
+                            <ItalicText style={{"marginTop": "0px"}}>Back End created to store restaraunt information and users</ItalicText>
                         </RightListItem>
                         <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>Java, Spring, OAuth2</p>
                         <ul style={{'marginRight': "20px", "marginBottom": "20px"}}>
@@ -195,6 +201,154 @@ const ResumeCopy = ({props, open}) => {
                     </MainDiv>
                 </RightDiv>
             </BodyDiv>
+            :
+            <MobileBodyDiv>
+                <MobileSideDiv>
+                    <MobileContactListItem style={{"flex-direction": "column"}}>
+                        <SubHeader>C{" "}O{" "}N{" "}T{" "}A{" "}C{" "}T</SubHeader>
+                        <MobileTitleLine />
+                    </MobileContactListItem>
+                    <MobileContactListItem>
+                        <MailIcon />
+                        <ATag href="mailto:seth.nadu@gmail.com" alt = 'email'>seth.nadu@gmail.com</ATag>    
+                    </MobileContactListItem>
+                    <MobileContactListItem>
+                        <PhoneIcon />
+                        <ATag href="tel:7173929717" alt = 'phone'>(717) 392-9717</ATag>
+                    </MobileContactListItem>
+                    <MobileContactListItem>
+                        <LocationOnIcon />
+                        <ATag href="https://www.google.com/maps/place/Lancaster,+PA/@40.0399543,-76.3705604,12z/data=!3m1!4b1!4m5!3m4!1s0x89c6248b917214b9:0xb46790d030dbd2d6!8m2!3d40.0378755!4d-76.3055144" alt = 'location'>Lancaster, PA</ATag>
+                    </MobileContactListItem>
+                    <MobileContactListItem>
+                        <WebIcon />
+                        <ATag href="https://www.sethnadu.com" alt = 'website'>www.sethnadu.com</ATag>
+                    </MobileContactListItem>
+                </MobileSideDiv>
+                <MobileSideDiv>
+                    <MobileContactListItem style={{"flex-direction": "column"}}>
+                        <div style={{"display": "flex", "flexFlow": "row wrap"}}>
+                            <SubHeader style = {{'marginRight': "10px"}}>C{" "}A{" "}R{" "}E{" "}E{" "}R</SubHeader>
+                            <SubHeader>O{" "}B{" "}J{" "}E{" "}C{" "}T{" "}I{" "}V{" "}E</SubHeader>
+                        </div>
+                        <MobileTitleLine />
+                    </MobileContactListItem>
+                    <RightListItem>
+                        <p style={{"textAlign": "center", "marginBottom": "20px"}}>Hard-working currently studying Full Stack Web Development at Lambda School Online, with 3.5 years of work expirence. Aiming to leverage a proven knowledge of Front End and Back End skills to successfully fill the Computer Programming role at your company. Frequently praised as focused by my peers, I can be relied upon to help your company achieve its goals.</p>
+                    </RightListItem>
+                </MobileSideDiv>    
+                <MobileSideDiv style={{"marginTop": "0", "marginBottom": "30px"}}>
+                    <MobileContactListItem style={{"flex-direction": "column"}}>
+                        <SubHeader>E{" "}D{" "}U{" "}C{" "}A{" "}T{" "}I{" "}O{" "}N</SubHeader>
+                        <MobileTitleLine />
+                    </MobileContactListItem>
+                    <MobileContactListItem>
+                        <Sectionheader style={{"paddingLeft": "0"}}>LAMBDA SCHOOL ONLINE</Sectionheader>
+                    </MobileContactListItem>
+                    <MobileContactListItem>
+                        <ItalicText>San Francisco, CA</ItalicText>
+                    </MobileContactListItem>
+                    <MobileContactListItem>
+                        <ItalicText>Full Stack Web Development</ItalicText>
+                    </MobileContactListItem>
+                    <ItalicText style={{"textAlign": "left", "marginTop": "5px", "marginBottom": "10px"}}>(Feb 2020)</ItalicText>
+                    <MobileContactListItem>
+                        <Sectionheader style={{"paddingLeft": "0"}}>Solanco High School</Sectionheader>
+                    </MobileContactListItem>
+                    <MobileContactListItem>
+                        <ItalicText>Lancaster, PA</ItalicText>
+                    </MobileContactListItem>
+                    <MobileContactListItem>
+                        <ItalicText>High School Diploma (Jun 2013)</ItalicText>
+                    </MobileContactListItem>
+                </MobileSideDiv>
+
+{/* Mobile Projects Resume Section */}
+                <MobileContactListItem style={{"flex-direction": "column", "marginTop": "20px"}}>
+                    <SubHeader>P{" "}R{" "}O{" "}J{" "}E{" "}C{" "}T{" "}S</SubHeader>
+                    <MobileTitleLine />
+                </MobileContactListItem>
+                <RightListItem>
+                    <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://www.didactlms.com" alt="Didact">DIDACT</a></MainSectionheader> 
+                </RightListItem>     
+                <RightListItem>
+                    <ItalicText style={{"marginTop": "0px"}}>A hub of online learning, Didact aims to learn as a community.</ItalicText>
+                </RightListItem>
+                <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>Node.js, Express, React, Redux, Material UI, and Passport.js</p>
+                <ul style={{'marginRight': "20px", "marginBottom": "30px"}}>
+                    <li style={{textAlign: 'left'}}>Built to the specifications of the stakeholder.</li>
+                    <li style={{textAlign: 'left'}}>A Lambda Labs projected created with 6 UI Developers and 1 UX developer in a 2 month timeframe.</li>
+                    <li style={{textAlign: 'left'}}>Focused on front-end development with React and Redux, with drag-and-drop functionality and Udemy integration.</li>
+                </ul>
+                <RightListItem>
+                    <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://andrewnadurestoration.netlify.com/" alt="Andrew Nadu Restoration">ANDREW NADU RESTORATION</a></MainSectionheader> 
+                </RightListItem>     
+                <RightListItem>
+                    <ItalicText style={{"marginTop": "0px"}}>A restoration portfolio showcasing masonry and restoration projects.</ItalicText>
+                </RightListItem>
+                <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>HTML, LESS, Javascript</p>
+                <ul style={{'marginRight': "20px", "marginBottom": "30px"}}>
+                    <li style={{textAlign: 'left'}}>Built to the specifications of the owner.</li>
+                    <li style={{textAlign: 'left'}}>An individual project, both developed and designed the layout.</li>
+                </ul>
+                <RightListItem>
+                    <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://github.com/Build-Week-Foodie-Funz/back-end" alt="Seth Nadu Portfolio">Java Backend</a></MainSectionheader> 
+                </RightListItem>     
+                <RightListItem>
+                    <ItalicText style={{"marginTop": "0px"}}>Back End created to store restaraunt information and users</ItalicText>
+                </RightListItem>
+                <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>Java, Spring, OAuth2</p>
+                <ul style={{'marginRight': "20px", "marginBottom": "20px"}}>
+                    <li style={{textAlign: 'left'}}>Built to connect to a Front End project.</li>
+                    <li style={{textAlign: 'left'}}>A Lambda Build week project, I was the only Back End Developer.</li>
+                    <li style={{textAlign: 'left'}}>Focused on mantaining the information sent from Front End, used OAuth2 authentication, with 72 tests tracking every endpoint.</li>
+                </ul>
+
+{/* Mobile Professional Experience Resume Section */}
+                <MobileContactListItem style={{"flex-direction": "column", "marginTop": "40px"}}>
+                    <div style={{"display": "flex", "flexFlow": "row wrap", "justifyContent": "center"}}>
+                        <SubHeader style = {{'marginRight': "5px"}}>P{" "}R{" "}O{" "}F{" "}E{" "}S{" "}S{" "}I{" "}O{" "}N{" "}A{" "}L</SubHeader>
+                        <SubHeader style = {{'marginRight': "5px"}}>E{" "}X{" "}P{" "}E{" "}R{" "}I{" "}E{" "}N{" "}C{" "}E</SubHeader>
+                    </div>
+                    <MobileTitleLine />
+                </MobileContactListItem>
+                <RightListItem>
+                    <MainSectionheader>COMPUTER TECHNICIAN MANAGER</MainSectionheader>   
+                </RightListItem>
+                <RightListItem>
+                    <ItalicText style={{"marginTop": "0px"}}>Sycamore International, West Grove, PA / Dec 2015 - May 2019</ItalicText>
+                </RightListItem>
+                <ul style={{'marginRight': "20px", "marginBottom": "20px"}}>
+                    <li style={{textAlign: 'left'}}>Refurbished and Recycled Form Factors ranging from PC's to Phones.</li>
+                    <li style={{textAlign: 'left'}}>I managed a small group of Computer Technicians and would organize, diagnose issues, and train employees</li>
+                    <li style={{textAlign: 'left'}}>Worked with hardware from both Apple and Microsoft</li>
+                </ul>
+                    
+                <MobileSideDiv>
+                    <MobileContactListItem style={{"flex-direction": "column"}}>
+                        <SubHeader>S{" "}k{" "}i{" "}l{" "}l{" "}s</SubHeader>
+                        <MobileTitleLine />
+                    </MobileContactListItem>
+                    <SkillListItem style = {{"alignItems": "center"}}>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>Git</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>Node</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>LESS</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>Python</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>HTML5</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>Redux</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>JavaScript</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>Semantic</p>    
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>Java</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>Spring</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>React</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>Django</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>Postgres</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>BootStrap</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>Material-UI</p>
+                            <p style = {{"margin": "0", "marginBottom": '5px'}}>Async Code</p>  
+                    </SkillListItem>
+                </MobileSideDiv>
+        </MobileBodyDiv>}
         </Container>
         
         </>
