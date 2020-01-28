@@ -96,10 +96,10 @@ const AboutPage = (props) => {
                     <li className={classes.listItem}>In the span of three and a half years, my interest 
                     in software and coding continued to grow, but now growth for this interest was limited 
                     in my current role.</li>
-                    <li className={classes.listItem}> As I explored knew opportunities to expand my knowledge base, 
+                    <li className={classes.listItem}> As I explored new opportunities to expand my knowledge base, 
                     I stumbled upon Lambda School to learn everything I can about programming!</li>
                     <li className={classes.listItem}> I'm currently exploring everything from front-end to the back-end, from HTML to Java, 
-                    I am ready to launch myself into this career-oriented program to become a Full Stack Developer!</li></ul>
+                    I am ready to launch myself into world of Tech!</li></ul>
                 ) : (
                 <p style={{textAlign: "center"}} className={classes.paragraphDiv}>Ever since I was a child I have been fascinated with computers...</p>
                 ): (
@@ -116,10 +116,10 @@ const AboutPage = (props) => {
                     <li className={classes.listItem}>In the span of three and a half years, my interest 
                     in software and coding continued to grow, but now growth for this interest was limited 
                     in my current role.</li>
-                    <li className={classes.listItem}> As I explored knew opportunities to expand my knowledge base, 
+                    <li className={classes.listItem}> As I explored new opportunities to expand my knowledge base, 
                     I stumbled upon Lambda School to learn everything I can about programming!</li>
                     <li className={classes.listItem}> I'm currently exploring everything from front-end to the back-end, from HTML to Java, 
-                    I am ready to launch myself into this career-oriented program to become a Full Stack Developer!</li></ul>
+                    I am ready to launch myself into the world of Tech!</li></ul>
                 )} 
             </div>
         </div>
