@@ -6,6 +6,12 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import WebIcon from '@material-ui/icons/Web';
 
+import Resume_PDF from '../../Assets/Resume.pdf'
+
+
+//Material UI Icons
+import DescriptionIcon from '@material-ui/icons/Description';
+
 //Styled Component Import
 import {
    Container,
@@ -45,6 +51,23 @@ const ResumeCopy = ({props, open}) => {
     const phoneSize = useMediaQuery("(max-width:700px)"); 
     return (
         <>
+        {open && phoneSize ? (
+            <div style={{margin: "80px auto 20px auto", width: "100%", display: "flex", flexDirection: 'column', justifyContent: "center", alignItems: "center"}}>
+            <h2 style={{color: '#feda6a'}}>Seth Nadu</h2>
+            <a href={Resume_PDF} alt="Seth Nadu Resume" download="Seth_Nadu_Resume" style={{textDecoration: "none", textAlign: "center"}}>
+                <DescriptionIcon style={{color: "white", fontSize: "3.3rem"}}/>
+                <h3 style={{textAlign: "center", color: '#feda6a', marginBottom:"-10px"}}>Download</h3>  
+                <h3 style={{textAlign: "center", color: '#feda6a'}}>Resume</h3>   
+            </a>
+            </div>
+        ) : (
+        <>
+        {!phoneSize ? 
+        <div style={{margin: "60px 60px -80px 25px", display: "flex", flexDirection: 'row', justifyContent: "flex-end"}}>
+            <a href={Resume_PDF} alt="Seth Nadu Resume" download="Seth_Nadu_Resume" style={{textDecoration:"none"}}>
+                <h3 style={{color: 'white'}}>Download</h3>
+            </a>
+        </div> : null}
         <Container>
             <NameDiv>
                 {!phoneSize ? <NameH2>SETH NADU</NameH2> : <NameH2 style={{"fontSize": "2.0rem"}}>SETH NADU</NameH2>}
@@ -350,7 +373,8 @@ const ResumeCopy = ({props, open}) => {
                 </MobileSideDiv>
         </MobileBodyDiv>}
         </Container>
-        
+        </>
+        )};
         </>
     )
 }
