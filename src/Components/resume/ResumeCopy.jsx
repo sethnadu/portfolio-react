@@ -209,7 +209,7 @@ const ResumeCopy = ({props, open}) => {
                             <li style={{textAlign: 'left'}}>An individual project, both developed and designed the layout.</li>
                         </ul>
                         <RightListItem>
-                            <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://github.com/Build-Week-Foodie-Funz/back-end" alt="Seth Nadu Portfolio">Java Backend</a></MainSectionheader> 
+                            <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://github.com/Build-Week-Foodie-Funz/back-end" alt="Seth Nadu Portfolio">JAVA BACKEND</a></MainSectionheader> 
                         </RightListItem>     
                         <RightListItem>
                             <ItalicText style={{"marginTop": "0px"}}>Back End created to store restaraunt information and users</ItalicText>
@@ -315,7 +315,7 @@ const ResumeCopy = ({props, open}) => {
                     <li style={{textAlign: 'left'}}>An individual project, both developed and designed the layout.</li>
                 </ul>
                 <RightListItem>
-                    <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://github.com/Build-Week-Foodie-Funz/back-end" alt="Seth Nadu Portfolio">Java Backend</a></MainSectionheader> 
+                    <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://github.com/Build-Week-Foodie-Funz/back-end" alt="Seth Nadu Portfolio">JAVA BACKEND</a></MainSectionheader> 
                 </RightListItem>     
                 <RightListItem>
                     <ItalicText style={{"marginTop": "0px"}}>Back End created to store restaraunt information and users</ItalicText>
