@@ -60,7 +60,6 @@ const useStyles = makeStyles({
 
 const FullList = ({props, open, handleDrawerClose, handleDrawerOpen}) => {
     const classes = useStyles(open); 
-    // console.log(handleDrawerOpen)
 
 
     

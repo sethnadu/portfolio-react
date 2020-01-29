@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 // Material UI Imports
 import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles} from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -18,10 +18,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import PhoneIcon from '@material-ui/icons/Phone';
-import HomeIcon from '@material-ui/icons/Home';
-import InfoIcon from '@material-ui/icons/Info';
-import CodeIcon from '@material-ui/icons/Code';
-import DescriptionIcon from '@material-ui/icons/Description';
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -115,7 +112,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function HeaderDrawer({props}) {
   const classes = useStyles();
-  const theme = useTheme();
   const [open, setOpen] = React.useState(false);  
 
   const handleDrawerOpen = () => {

@@ -15,8 +15,8 @@ import {
     Icon
 } from '../ProjectStyles';
 
-const potterapi = <a href="https://www.potterapi.com/" alt="potterapi">https://www.potterapi.com/</a>
-const seinfeldapi = <a href="https://seinfeld-quotes.herokuapp.com/" alt="seinfeld-quotes-api">https://seinfeld-quotes.herokuapp.com/</a>
+// const potterapi = <a href="https://www.potterapi.com/" alt="potterapi">https://www.potterapi.com/</a>
+// const seinfeldapi = <a href="https://seinfeld-quotes.herokuapp.com/" alt="seinfeld-quotes-api">https://seinfeld-quotes.herokuapp.com/</a>
 
 export const IndividualData = [
     {

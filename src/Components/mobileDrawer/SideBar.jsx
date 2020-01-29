@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from 'react-router-dom';
 
 // Material UI Imports
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles} from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 // Material UI Icons
@@ -51,7 +51,6 @@ const useStyles = makeStyles({
 
 const SideBar = ({props, open, handleDrawerClose, handleDrawerOpen}) => {
     const classes = useStyles(open); 
-    // console.log(handleDrawerOpen)
 
 
     

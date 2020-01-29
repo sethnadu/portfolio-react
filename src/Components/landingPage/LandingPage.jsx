@@ -5,11 +5,10 @@ import { Link } from "react-router-dom";
 import { LandingBackground, Cover, MiddleDiv} from './LandingPageStyles';
 
 //Material UI imports
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { makeStyles } from '@material-ui/core/styles';
 // Material Media Query
-import useMediaQuery from "@material-ui/core/useMediaQuery"
+
 
 
 const useStyles = makeStyles({
@@ -35,7 +34,6 @@ const useStyles = makeStyles({
 
 const LandingPage = () => {
     const classes = useStyles();
-    const phoneSize = useMediaQuery("(max-width:700px)"); 
 
    
     return (

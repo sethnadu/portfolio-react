@@ -46,7 +46,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Header = ({props}) => {
-    console.log(props)
   const classes = useStyles();
   
     

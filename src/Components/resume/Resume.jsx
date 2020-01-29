@@ -1,5 +1,4 @@
 import React from 'react'
-import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer';
 
 //Material UI Icons
 import MailIcon from '@material-ui/icons/Mail';

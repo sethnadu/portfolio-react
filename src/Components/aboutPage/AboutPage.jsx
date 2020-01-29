@@ -79,7 +79,7 @@ const AboutPage = (props) => {
         <h2 className={!phoneSize ? classes.titleDesktop : classes.titleMobile}>Who I Am</h2>
         <div className={!phoneSize ? classes.desktopStyle : null}>
             <div>
-                <img className={phoneSize ? !props.open ? classes.photoImage : classes.photoImageOpen : classes.photoImage}src={Photo} alt='Picture of Seth Nadu'></img>
+                <img className={phoneSize ? !props.open ? classes.photoImage : classes.photoImageOpen : classes.photoImage}src={Photo} alt='Seth Nadu'></img>
             </div>
             <div>
                 {phoneSize ? !props.open ? (

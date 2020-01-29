@@ -1,11 +1,9 @@
 import React from "react";
 import AboutPage from '../aboutPage/AboutPage'
 import Projects from '../projects/Projects'
-import Resume from '../resume/Resume'
 import ResumeCopy from '../resume/ResumeCopy'
 
 const Content = ({props, open}) => {
-    console.log(props.page)
     return (
         <div>
         {(() => {

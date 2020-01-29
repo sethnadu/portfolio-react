@@ -9,7 +9,6 @@ import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import ListItemText from "@material-ui/core/ListItemText";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
-import FolderIcon from "@material-ui/icons/Folder";
 
 //Material UI icons
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -135,8 +134,7 @@ const useStyles = makeStyles(theme => ({
 
 const Skills = ({ phoneSize, open }) => {
   const classes = useStyles();
-  const [dense, setDense] = useState(false);
-  const [secondary, setSecondary] = useState(false);
+  const dense = false;
   const [gitHubInfo, setGitHubInfo] = useState();
   const largeDesktopSize = useMediaQuery("(min-width:1400px)");
   const betweenSize = useMediaQuery("(min-width:601px)(max-width:1390px)");
@@ -152,7 +150,6 @@ const Skills = ({ phoneSize, open }) => {
       });
   }, []);
 
-  console.log(gitHubInfo);
 
   const skillsArray1 = [
     { name: "Git", icon: <IoMdGitBranch /> },
@@ -177,7 +174,6 @@ const Skills = ({ phoneSize, open }) => {
 
   const skillsArrayAll = skillsArray1.concat(skillsArray2);
   skillsArrayAll.sort((a, b) => a.name.length - b.name.length);
-  console.log(skillsArrayAll);
   return (
     <div
       className={
@@ -224,7 +220,7 @@ const Skills = ({ phoneSize, open }) => {
             <List dense={dense}>
               {skillsArray2.map(skill => {
                 return (
-                  <ListItem>
+                  <ListItem key={skill.name}>
                     <ListItemAvatar>
                       <Avatar className={classes.icon}>{skill.icon}</Avatar>
                     </ListItemAvatar>
@@ -242,7 +238,7 @@ const Skills = ({ phoneSize, open }) => {
             {skillsArrayAll.map((skill, i) => {
               return (
                 <div className={classes.phoneSkillsChange}>
-                  <ListItemAvatar>
+                  <ListItemAvatar key={skill.name}>
                     <Avatar style={{ margin: "auto" }} className={classes.icon}>
                       {skill.icon}
                     </Avatar>
@@ -290,7 +286,7 @@ const Skills = ({ phoneSize, open }) => {
               </span>
             </p>
           </div>
-          <img src="http://ghchart.rshah.org/sethnadu" />
+          <img alt="Github Graph" src="http://ghchart.rshah.org/sethnadu" />
         </div>
       ) : !open ? (
         <div>
@@ -318,6 +314,7 @@ const Skills = ({ phoneSize, open }) => {
           </div>
           <img
             className={classes.gitHubGraphMobile}
+            alt="Github Graph"
             src="http://ghchart.rshah.org/sethnadu"
           />
         </div>
@@ -347,7 +344,7 @@ const Skills = ({ phoneSize, open }) => {
           <FaChartBar style={{ fontSize: "1.8rem", color: "#d4d4dc" }} />
         </div>
       )}
-    </div>
+    </div> 
   );
 };
 

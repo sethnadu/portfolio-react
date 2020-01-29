@@ -7,7 +7,6 @@ import useMediaQuery from "@material-ui/core/useMediaQuery"
   
 
 const MainPage = (props) => {
-    console.log(props)
     const phoneSize = useMediaQuery("(max-width:700px)");  
     return (
         <>

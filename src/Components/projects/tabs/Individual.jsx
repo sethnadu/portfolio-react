@@ -13,11 +13,10 @@ import EachProject from "./EachProject";
 
 
 const Individual = (props) => {
-    console.log(props)
     return (
         <Container>
             {IndividualData.map(el => {
-               return <EachProject el = {el} phoneSize = {props.phoneSize} open = {props.open}/>
+               return <EachProject key={el.name} el = {el} phoneSize = {props.phoneSize} open = {props.open}/>
             })}
 
         </Container>
