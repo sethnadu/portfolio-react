@@ -15,6 +15,14 @@ export const Icon = styled.img `
 
 `
 
+export const IconStream = styled.img `
+    border-radius: 50%;
+    width: 50px;
+    border: 2px solid #feda6a;
+    padding-left: 4px;
+
+`
+
 export const OpenProjectGif = styled.img `
     width: 100%;
     margin-bottom: 10px;

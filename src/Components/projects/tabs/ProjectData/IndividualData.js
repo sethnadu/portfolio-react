@@ -4,15 +4,18 @@ import React from 'react';
 import AndrewGif from '../../../../Assets/Gif/andrewGif.gif'
 import HarryGif from '../../../../Assets/Gif/harryvideo.gif'
 import SeinfeldGif from '../../../../Assets/Gif/seinfeldGif.gif'
+import StreamGif from '../../../../Assets/Gif/streamgif.gif'
 
 //Site Icon Imports
 import AndrewIcon from '../../../../Assets/siteIcons/andrewicon.png'
 import HarryIcon from '../../../../Assets/siteIcons/harrypottericon.jpg'
 import SeinfeldIcon from '../../../../Assets/siteIcons/seinfeldicon.jpeg'
+import StreamIcon from '../../../../Assets/siteIcons/streamfinder.png'
 
 //Styled Component Imports
 import { 
-    Icon
+    Icon,
+    IconStream
 } from '../ProjectStyles';
 
 // const potterapi = <a href="https://www.potterapi.com/" alt="potterapi">https://www.potterapi.com/</a>
@@ -47,5 +50,15 @@ export const IndividualData = [
         github: "https://github.com/sethnadu/React-Redux-App",
         description: `Built with React and Redux, using `,
         apiLink: <a style={{color: '#feda6a', textDecoration: "none"}} href="https://seinfeld-quotes.herokuapp.com/" alt="seinfeld-quotes-api">https://seinfeld-quotes.herokuapp.com/</a>
+    },
+    {
+        name: 'Stream Finder',
+        subName: 'Find where to stream your content!',
+        gif: StreamGif,
+        site: "https://stream-finder.netlify.com/",
+        siteIcon: <IconStream src={StreamIcon} alt="Stream Finder" />,
+        github: "https://github.com/sethnadu/NotePad",
+        description: `Built with React and Redux, using `,
+        apiLink: <a style={{color: '#feda6a', textDecoration: "none"}} href="https://rapidapi.com/utelly/api/utelly/endpoints" alt="Utelly">https://rapidapi.com/utelly/api/utelly</a>
     },
 ]
