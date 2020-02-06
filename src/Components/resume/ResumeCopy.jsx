@@ -161,8 +161,48 @@ const ResumeCopy = ({props, open}) => {
                             </div>
                         </RightListItem>
                         <RightListItem>
-                            <p style={{'marginRight': "20px", "marginBottom": "20px"}}>Hard-working currently studying Full Stack Web Development at Lambda School Online, with 3.5 years of work expirence. Aiming to leverage a proven knowledge of Front End and Back End skills to successfully fill the Computer Programming role at your company. Frequently praised as focused by my peers, I can be relied upon to help your company achieve its goals.</p>
+                            <p style={{'marginRight': "20px", "marginBottom": "20px"}}>I am looking for a Full Stack Web or Front-End position. My strengths are in React, Redux, and Javascript, with knowledge of Java, Node and Python.</p>
                         </RightListItem>
+                        <RightListItem>
+                            <MainTitleLine />
+                                <SubHeader style = {{'marginRight': "10px", "marginBottom": "20px"}}>P{" "}R{" "}O{" "}J{" "}E{" "}C{" "}T{" "}S</SubHeader>
+                        </RightListItem>
+                        <RightListItem>
+                            <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://www.didactlms.com" alt="Didact">DIDACT</a></MainSectionheader> 
+                        </RightListItem>     
+                        <RightListItem>
+                            <ItalicText style={{"marginTop": "0px"}}>A hub of online learning, Didact aims to learn as a community.</ItalicText>
+                        </RightListItem>
+                        <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>Node.js, Express, React, Redux, Material UI, and Passport.js</p>
+                        <ul style={{'marginRight': "20px", "marginBottom": "30px"}}>
+                            <li style={{textAlign: 'left'}}>Built to the specifications of the stakeholder, created with 6 UI Developers and 1 UX developer in a 2 month timeframe.</li>
+                            <li style={{textAlign: 'left'}}>Focused on front-end development with React and Redux, with drag-and-drop functionality, Material UI styling library.</li>
+                            <li style={{textAlign: 'left'}}>Contributed with Node Express endpoints, documentation as well as front-end intergration with Udemy's courses.</li>
+                        </ul>
+                        <RightListItem>
+                            <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://andrewnadurestoration.netlify.com/" alt="Andrew Nadu Restoration">ANDREW NADU RESTORATION</a></MainSectionheader> 
+                        </RightListItem>     
+                        <RightListItem>
+                            <ItalicText style={{"marginTop": "0px"}}>A restoration portfolio showcasing masonry and restoration projects.</ItalicText>
+                        </RightListItem>
+                        <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>HTML, LESS, Javascript</p>
+                        <ul style={{'marginRight': "20px", "marginBottom": "30px"}}>
+                            <li style={{textAlign: 'left'}}>An individual project, built to the specifications of the owner, used as a portfolio of their work.</li>
+                            <li style={{textAlign: 'left'}}>Focused on the core of computer languages, using HTML and LESS for the framework and styling.</li>
+                            <li style={{textAlign: 'left'}}>Created multiple reusable Javascript components for portfolio carousels and smooth mobile integration.</li>
+                        </ul>
+                        <RightListItem>
+                            <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://github.com/Build-Week-Foodie-Funz/back-end" alt="Seth Nadu Portfolio">JAVA BACKEND</a></MainSectionheader> 
+                        </RightListItem>     
+                        <RightListItem>
+                            <ItalicText style={{"marginTop": "0px"}}>Back End created to store restaraunt information and users</ItalicText>
+                        </RightListItem>
+                        <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>Java, Spring, OAuth2</p>
+                        <ul style={{'marginRight': "20px", "marginBottom": "20px"}}>
+                            <li style={{textAlign: 'left'}}>Built to connect to a Front End project, only Back End Developer.</li>
+                            <li style={{textAlign: 'left'}}>Used Spring, PostgreSQL as the database, with OAuth2 authentication for securing user data.</li>
+                            <li style={{textAlign: 'left'}}>Focused on mantaining the information sent from Front End, with 72 tests tracking every endpoint.</li>
+                        </ul>
                         <RightListItem>
                             <MainTitleLine />
                             <div style={{"display": "flex", "flexFlow": "row wrap", "marginBottom": "20px"}}>
@@ -178,47 +218,8 @@ const ResumeCopy = ({props, open}) => {
                         </RightListItem>
                         <ul style={{'marginRight': "20px", "marginBottom": "20px"}}>
                             <li style={{textAlign: 'left'}}>Refurbished and Recycled Form Factors ranging from PC's to Phones.</li>
-                            <li style={{textAlign: 'left'}}>I managed a small group of Computer Technicians and would organize, diagnose issues, and train employees</li>
+                            <li style={{textAlign: 'left'}}>Managed a small group of Computer Technicians and would organize, diagnose issues, and train employees</li>
                             <li style={{textAlign: 'left'}}>Worked with hardware from both Apple and Microsoft</li>
-                        </ul>
-                        <RightListItem>
-                            <MainTitleLine />
-                                <SubHeader style = {{'marginRight': "10px", "marginBottom": "20px"}}>P{" "}R{" "}O{" "}J{" "}E{" "}C{" "}T{" "}S</SubHeader>
-                        </RightListItem>
-                        <RightListItem>
-                            <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://www.didactlms.com" alt="Didact">DIDACT</a></MainSectionheader> 
-                        </RightListItem>     
-                        <RightListItem>
-                            <ItalicText style={{"marginTop": "0px"}}>A hub of online learning, Didact aims to learn as a community.</ItalicText>
-                        </RightListItem>
-                        <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>Node.js, Express, React, Redux, Material UI, and Passport.js</p>
-                        <ul style={{'marginRight': "20px", "marginBottom": "30px"}}>
-                            <li style={{textAlign: 'left'}}>Built to the specifications of the stakeholder.</li>
-                            <li style={{textAlign: 'left'}}>A Lambda Labs projected created with 6 UI Developers and 1 UX developer in a 2 month timeframe.</li>
-                            <li style={{textAlign: 'left'}}>Focused on front-end development with React and Redux, with drag-and-drop functionality and Udemy integration.</li>
-                        </ul>
-                        <RightListItem>
-                            <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://andrewnadurestoration.netlify.com/" alt="Andrew Nadu Restoration">ANDREW NADU RESTORATION</a></MainSectionheader> 
-                        </RightListItem>     
-                        <RightListItem>
-                            <ItalicText style={{"marginTop": "0px"}}>A restoration portfolio showcasing masonry and restoration projects.</ItalicText>
-                        </RightListItem>
-                        <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>HTML, LESS, Javascript</p>
-                        <ul style={{'marginRight': "20px", "marginBottom": "30px"}}>
-                            <li style={{textAlign: 'left'}}>Built to the specifications of the owner.</li>
-                            <li style={{textAlign: 'left'}}>An individual project, both developed and designed the layout.</li>
-                        </ul>
-                        <RightListItem>
-                            <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://github.com/Build-Week-Foodie-Funz/back-end" alt="Seth Nadu Portfolio">JAVA BACKEND</a></MainSectionheader> 
-                        </RightListItem>     
-                        <RightListItem>
-                            <ItalicText style={{"marginTop": "0px"}}>Back End created to store restaraunt information and users</ItalicText>
-                        </RightListItem>
-                        <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>Java, Spring, OAuth2</p>
-                        <ul style={{'marginRight': "20px", "marginBottom": "20px"}}>
-                            <li style={{textAlign: 'left'}}>Built to connect to a Front End project.</li>
-                            <li style={{textAlign: 'left'}}>A Lambda Build week project, I was the only Back End Developer.</li>
-                            <li style={{textAlign: 'left'}}>Focused on mantaining the information sent from Front End, used OAuth2 authentication, with 72 tests tracking every endpoint.</li>
                         </ul>
     
                     </MainDiv>
@@ -257,7 +258,7 @@ const ResumeCopy = ({props, open}) => {
                         <MobileTitleLine />
                     </MobileContactListItem>
                     <RightListItem>
-                        <p style={{"textAlign": "center", "marginBottom": "20px"}}>Hard-working currently studying Full Stack Web Development at Lambda School Online, with 3.5 years of work expirence. Aiming to leverage a proven knowledge of Front End and Back End skills to successfully fill the Computer Programming role at your company. Frequently praised as focused by my peers, I can be relied upon to help your company achieve its goals.</p>
+                        <p style={{"textAlign": "center", "marginBottom": "20px"}}>I am looking for a Full Stack Web or Front-End position. My strengths are in React, Redux, and Javascript, with knowledge of Java, Node and Python.</p>
                     </RightListItem>
                 </MobileSideDiv>    
                 <MobileSideDiv style={{"marginTop": "0", "marginBottom": "30px"}}>
@@ -299,9 +300,9 @@ const ResumeCopy = ({props, open}) => {
                 </RightListItem>
                 <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>Node.js, Express, React, Redux, Material UI, and Passport.js</p>
                 <ul style={{'marginRight': "20px", "marginBottom": "30px"}}>
-                    <li style={{textAlign: 'left'}}>Built to the specifications of the stakeholder.</li>
-                    <li style={{textAlign: 'left'}}>A Lambda Labs projected created with 6 UI Developers and 1 UX developer in a 2 month timeframe.</li>
-                    <li style={{textAlign: 'left'}}>Focused on front-end development with React and Redux, with drag-and-drop functionality and Udemy integration.</li>
+                    <li style={{textAlign: 'left'}}>Built to the specifications of the stakeholder, created with 6 UI Developers and 1 UX developer in a 2 month timeframe.</li>
+                    <li style={{textAlign: 'left'}}>Focused on front-end development with React and Redux, with drag-and-drop functionality, Material UI styling library.</li>
+                    <li style={{textAlign: 'left'}}>Contributed with Node Express endpoints, documentation as well as front-end intergration with Udemy's courses.</li>
                 </ul>
                 <RightListItem>
                     <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://andrewnadurestoration.netlify.com/" alt="Andrew Nadu Restoration">ANDREW NADU RESTORATION</a></MainSectionheader> 
@@ -311,8 +312,9 @@ const ResumeCopy = ({props, open}) => {
                 </RightListItem>
                 <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>HTML, LESS, Javascript</p>
                 <ul style={{'marginRight': "20px", "marginBottom": "30px"}}>
-                    <li style={{textAlign: 'left'}}>Built to the specifications of the owner.</li>
-                    <li style={{textAlign: 'left'}}>An individual project, both developed and designed the layout.</li>
+                    <li style={{textAlign: 'left'}}>An individual project, built to the specifications of the owner, used as a portfolio of their work.</li>
+                    <li style={{textAlign: 'left'}}>Focused on the core of computer languages, using HTML and LESS for the framework and styling.</li>
+                    <li style={{textAlign: 'left'}}>Created multiple reusable Javascript components for portfolio carousels and smooth mobile integration.</li>
                 </ul>
                 <RightListItem>
                     <MainSectionheader><a style={{"textDecoration": "None", "color": "black"}} href="https://github.com/Build-Week-Foodie-Funz/back-end" alt="Seth Nadu Portfolio">JAVA BACKEND</a></MainSectionheader> 
@@ -322,9 +324,9 @@ const ResumeCopy = ({props, open}) => {
                 </RightListItem>
                 <p style={{'marginBottom': "-10px"}}><span style={{"fontWeight": "bolder"}}>Tech Stack: </span>Java, Spring, OAuth2</p>
                 <ul style={{'marginRight': "20px", "marginBottom": "20px"}}>
-                    <li style={{textAlign: 'left'}}>Built to connect to a Front End project.</li>
-                    <li style={{textAlign: 'left'}}>A Lambda Build week project, I was the only Back End Developer.</li>
-                    <li style={{textAlign: 'left'}}>Focused on mantaining the information sent from Front End, used OAuth2 authentication, with 72 tests tracking every endpoint.</li>
+                    <li style={{textAlign: 'left'}}>Built to connect to a Front End project, only Back End Developer.</li>
+                    <li style={{textAlign: 'left'}}>Used Spring, PostgreSQL as the database, with OAuth2 authentication for securing user data.</li>
+                    <li style={{textAlign: 'left'}}>Focused on mantaining the information sent from Front End, with 72 tests tracking every endpoint.</li>
                 </ul>
 
 {/* Mobile Professional Experience Resume Section */}
@@ -343,7 +345,7 @@ const ResumeCopy = ({props, open}) => {
                 </RightListItem>
                 <ul style={{'marginRight': "20px", "marginBottom": "20px"}}>
                     <li style={{textAlign: 'left'}}>Refurbished and Recycled Form Factors ranging from PC's to Phones.</li>
-                    <li style={{textAlign: 'left'}}>I managed a small group of Computer Technicians and would organize, diagnose issues, and train employees</li>
+                    <li style={{textAlign: 'left'}}>Managed a small group of Computer Technicians and would organize, diagnose issues, and train employees</li>
                     <li style={{textAlign: 'left'}}>Worked with hardware from both Apple and Microsoft</li>
                 </ul>
                     
