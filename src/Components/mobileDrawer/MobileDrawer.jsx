@@ -131,7 +131,7 @@ export default function MobileDrawer({props}) {
         className={open ? classes.appBar : classes.appBarClose}
       >
         <Toolbar>
-          <Typography variant="h6" noWrap style={{fontWeight: 'bold', fontFamily: "Open Sans"}}>
+          <Typography variant="h6" noWrap style={{fontWeight: 'bold', fontFamily: "Open Sans", color: "white"}}>
             Seth Nadu
           </Typography>
         </Toolbar>
