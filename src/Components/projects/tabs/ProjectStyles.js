@@ -11,21 +11,17 @@ export const Container = styled.div `
 export const Icon = styled.img `
     border-radius: 50%;
     width: 50px;
-    border: 2px solid #feda6a;
 
 `
 
 export const IconStream = styled.img `
-    border-radius: 50%;
     width: 50px;
-    border: 2px solid #feda6a;
-    padding-left: 4px;
+    padding-left: 5px;
 
 `
 
 export const OpenProjectGif = styled.img `
     width: 100%;
     margin-bottom: 10px;
-    border: 2px solid #feda6a;
     height: 100px;
 `

@@ -1,14 +1,14 @@
 html {
   margin: 0 !important;
   padding: 0 !important;
-  background-color: #393f4d;
+  background-color: #F5F5F5 !important;
   /* background-color: white; */
   font-family: 'Open Sans', sans-serif;
 }
 
 body {
   margin: 0 !important;
-  background-color: #393f4d;
+  background-color: #F5F5F5!important;
   font-family: 'Open Sans', sans-serif;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

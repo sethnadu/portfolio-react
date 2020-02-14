@@ -64,7 +64,7 @@ const SideBar = ({props, open, handleDrawerClose, handleDrawerOpen}) => {
             )}
             
         </div>
-        {!open ? (<Divider style={{backgroundColor: "#393f4d", opacity: '.7', height: '2px'}}/>):(<Divider style={{backgroundColor: "#feda6a", opacity: '.7', height: '2px'}}/>)}
+        {!open ? (<Divider style={{backgroundColor: "#B0B0B0", opacity: '.7', height: '2px'}}/>):(<Divider style={{backgroundColor: "#B0B0B0", opacity: '.7', height: '2px'}}/>)}
         <List>
             <NavLink to="/" style={{textDecoration: 'none', color: 'inherit'}}>
             <div className={classes.iconDiv}> 
@@ -94,7 +94,7 @@ const SideBar = ({props, open, handleDrawerClose, handleDrawerOpen}) => {
             </div>
             </NavLink>
         </List>
-        {!open ? (<Divider style={{backgroundColor: "#393f4d", opacity: '.7', height: '2px'}}/>):(<Divider style={{backgroundColor: "#feda6a", opacity: '.7', height: '2px'}}/>)}
+        {!open ? (<Divider style={{backgroundColor: "#B0B0B0", opacity: '.7', height: '2px'}}/>):(<Divider style={{backgroundColor: "#B0B0B0", opacity: '.7', height: '2px'}}/>)}
         <List>
             <a href="https://github.com/sethnadu" alt="GitHub" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
                 <GitHubIcon className={classes.menuButton}/>

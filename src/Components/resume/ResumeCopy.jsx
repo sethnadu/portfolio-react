@@ -53,11 +53,11 @@ const ResumeCopy = ({props, open}) => {
         <>
         {open && phoneSize ? (
             <div style={{margin: "80px auto 20px auto", width: "100%", display: "flex", flexDirection: 'column', justifyContent: "center", alignItems: "center"}}>
-            <h2 style={{color: '#feda6a'}}>Seth Nadu</h2>
+            <h2 style={{color: '#6B6B6B'}}>Seth Nadu</h2>
             <a href={Resume_PDF} alt="Seth Nadu Resume" download="Seth_Nadu_Resume" style={{textDecoration: "none", textAlign: "center"}}>
-                <DescriptionIcon style={{color: "white", fontSize: "3.3rem"}}/>
-                <h3 style={{textAlign: "center", color: '#feda6a', marginBottom:"-10px"}}>Download</h3>  
-                <h3 style={{textAlign: "center", color: '#feda6a'}}>Resume</h3>   
+                <DescriptionIcon style={{color: "#6B6B6B", fontSize: "3.3rem"}}/>
+                <h3 style={{textAlign: "center", color: '#6B6B6B', marginBottom:"-10px"}}>Download</h3>  
+                <h3 style={{textAlign: "center", color: '#6B6B6B'}}>Resume</h3>   
             </a>
             </div>
         ) : (
@@ -376,7 +376,7 @@ const ResumeCopy = ({props, open}) => {
         </MobileBodyDiv>}
         </Container>
         </>
-        )};
+        )}
         </>
     )
 }

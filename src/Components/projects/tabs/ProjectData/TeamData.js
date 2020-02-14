@@ -32,7 +32,7 @@ import {
         subName: 'Used for Tracking Favorite Menu Items',
         gif: JavaGif,
         site: "https://sethnadu-foodie-bw.herokuapp.com/swagger-ui.html",
-        siteIcon: <FaJava style={{backgroundColor: 'white', fontSize: '3rem', borderRadius: "50%", border: "2px solid #feda6a"}} />,
+        siteIcon: <FaJava style={{backgroundColor: 'white', fontSize: '3rem', borderRadius: "50%", color: "#6B6B6B"}} />,
         github: "https://github.com/Build-Week-Foodie-Funz/back-end",
         description: 'Created within a week timeframe, this backend has multiple endpoints to track, record and add various restaurants along with a users favorite menu items. Created with Java, there are 72 tests tracking every endpoint, secure with OAuth2 authentication'
     },
