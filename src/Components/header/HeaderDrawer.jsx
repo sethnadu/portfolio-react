@@ -95,7 +95,7 @@ const useStyles = makeStyles(theme => ({
   content: {
     width: "100%",
     height: '100%',
-    backgroundColor: "#393f4d",
+    backgroundColor: "#F5F5F5",
 
   },
   contentOpen: {
