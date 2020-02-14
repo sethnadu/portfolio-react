@@ -117,13 +117,13 @@ const ResumeCopy = ({props, open}) => {
                         </ContactListItem>
                         <ItalicText style={{"textAlign": "right", "marginTop": "5px", "marginBottom": "10px"}}>(Feb 2020)</ItalicText>
                         <ContactListItem>
-                            <Sectionheader>Solanco High School</Sectionheader>
+                            <Sectionheader>Millersville University</Sectionheader>
                         </ContactListItem>
                         <ContactListItem>
                             <ItalicText>Lancaster, PA</ItalicText>
                         </ContactListItem>
                         <ContactListItem>
-                            <ItalicText>High School Diploma (Jun 2013)</ItalicText>
+                            <ItalicText>Selected Courses (2014-2015)</ItalicText>
                         </ContactListItem>
                     </SideDiv>
                     <SideDiv>
@@ -277,13 +277,13 @@ const ResumeCopy = ({props, open}) => {
                     </MobileContactListItem>
                     <ItalicText style={{"textAlign": "left", "marginTop": "5px", "marginBottom": "10px"}}>(Feb 2020)</ItalicText>
                     <MobileContactListItem>
-                        <Sectionheader style={{"paddingLeft": "0"}}>Solanco High School</Sectionheader>
+                        <Sectionheader style={{"paddingLeft": "0"}}>Millersville University</Sectionheader>
                     </MobileContactListItem>
                     <MobileContactListItem>
                         <ItalicText>Lancaster, PA</ItalicText>
                     </MobileContactListItem>
                     <MobileContactListItem>
-                        <ItalicText>High School Diploma (Jun 2013)</ItalicText>
+                        <ItalicText>Selected Courses (2014-2015)</ItalicText>
                     </MobileContactListItem>
                 </MobileSideDiv>
 

@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1,
-    color: '#845007',
+    color: 'white',
     fontWeight: 'bold'
   },
   buttonLinks: {
