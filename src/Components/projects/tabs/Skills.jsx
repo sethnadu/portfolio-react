@@ -266,7 +266,7 @@ const Skills = ({ phoneSize, open }) => {
         <div>
           <h2 className={classes.titleDesktop}>GitHub Contribution Graph</h2>
           <div className={classes.gitHubInformation}>
-            <a style={{textDecoration: "none"}} href="https://github.com/sethnadu" alt="github"><p style={{ color: "black" }}>{gitHubInfo && gitHubInfo.login}</p></a>
+            <a style={{textDecoration: "none"}} target="_blank" rel="noopener noreferrer"  href="https://github.com/sethnadu" alt="github"><p style={{ color: "black", borderBottom: "2px solid #feda6a ", width: '90px', textAlign: "center", margin: '15px auto auto auto' }}>{gitHubInfo && gitHubInfo.login}</p></a>
             <p style={{ color: "#6B6B6B" }}>
               Repos:{" "}
               <span style={{ color: "black" }}>
@@ -292,7 +292,7 @@ const Skills = ({ phoneSize, open }) => {
         <div>
           <h2 className={classes.titleMobile}>GitHub Contribution Graph</h2>
           <div>
-            <p style={{ color: "black" }}>{gitHubInfo && gitHubInfo.login}</p>
+          <a style={{textDecoration: "none"}} target="_blank" rel="noopener noreferrer"  href="https://github.com/sethnadu" alt="github"><p style={{ color: "black", borderBottom: "2px solid #feda6a ", width: '90px', textAlign: "center", margin: 'auto'}}>{gitHubInfo && gitHubInfo.login}</p></a>
             <p style={{ color: "#6B6B6B" }}>
               Repos:{" "}
               <span style={{ color: "black" }}>

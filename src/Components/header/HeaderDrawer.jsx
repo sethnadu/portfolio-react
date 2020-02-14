@@ -159,16 +159,16 @@ export default function HeaderDrawer({props}) {
             ) : null}
             </div>
           <div style={{display: "flex", right: "0px"}}>
-            <a href="https://github.com/sethnadu" alt="GitHub" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
+            <a href="https://github.com/sethnadu" alt="GitHub" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
                 <GitHubIcon className={classes.menuButton}/>
             </a>
-            <a href="https://www.linkedin.com/in/seth-nadu-8b5983187/" alt="LinkedIn" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
+            <a href="https://www.linkedin.com/in/seth-nadu-8b5983187/" target="_blank" rel="noopener noreferrer" alt="LinkedIn" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
                 <LinkedInIcon className={classes.menuButton}/>
             </a> 
-            <a href="phone:7173929717" alt="Phone" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDivLink}>
+            <a href="phone:7173929717" alt="Phone" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDivLink}>
                 <PhoneIcon className={classes.menuButton}/>
             </a>
-            <a href="mailto:seth.nadu@gmail.com" alt="Mail" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDivLink}>
+            <a href="mailto:seth.nadu@gmail.com" target="_blank" rel="noopener noreferrer" alt="Mail" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDivLink}>
                 <MailIcon className={classes.menuButton}/>
             </a>
           </div>

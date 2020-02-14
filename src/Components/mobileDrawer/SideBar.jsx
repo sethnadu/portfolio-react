@@ -96,19 +96,19 @@ const SideBar = ({props, open, handleDrawerClose, handleDrawerOpen}) => {
         </List>
         {!open ? (<Divider style={{backgroundColor: "#B0B0B0", opacity: '.7', height: '2px'}}/>):(<Divider style={{backgroundColor: "#B0B0B0", opacity: '.7', height: '2px'}}/>)}
         <List>
-            <a href="https://github.com/sethnadu" alt="GitHub" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
+            <a href="https://github.com/sethnadu" target="_blank" rel="noopener noreferrer" alt="GitHub" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
                 <GitHubIcon className={classes.menuButton}/>
                 <p style={{fontSize: '1.2rem'}}>Github</p>
             </a>
-            <a href="https://www.linkedin.com/in/seth-nadu-8b5983187/" alt="LinkedIn" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
+            <a href="https://www.linkedin.com/in/seth-nadu-8b5983187/" alt="LinkedIn" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
                 <LinkedInIcon className={classes.menuButton}/>
                 <p style={{fontSize: '1.2rem'}}>LinkedIn</p>
             </a>
-            <a href="phone:7173929717" alt="Phone" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
+            <a href="phone:7173929717" alt="Phone" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
                 <PhoneIcon className={classes.menuButton}/>
                 <p style={{fontSize: '1.0rem'}}>(717) 392-9717</p>
             </a>
-            <a href="mailto:seth.nadu@gmail.com" alt="Mail" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
+            <a href="mailto:seth.nadu@gmail.com" alt="Mail" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}} className={classes.iconDiv}>
                 <MailIcon className={classes.menuButton}/>
                 <p style={{fontSize: '.8rem'}}>seth.nadu@gmail.com</p>
             </a>
