@@ -14,7 +14,7 @@ const useStyles = makeStyles({
         borderRadius: '15px',
         width: "100%",
         maxWidth: '500px',
-        minWidth: '400px',
+        minWidth: '300px',
         height: "100%"
         // border: '2px solid #feda6a'
     },
