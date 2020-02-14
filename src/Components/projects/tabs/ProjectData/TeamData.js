@@ -22,7 +22,7 @@ import {
         name: 'Didact',
         subName: 'Online Course Learning Hub',
         gif: DidactGif,
-        site: "https://didactlms.com/landing",
+        site: "https://didact-fe.netlify.com/landing",
         siteIcon: <Icon style={{backgroundColor: 'white'}} src={DidactIcon} alt="Didact Favicon" />,
         github: "https://github.com/Lambda-School-Labs/didact-fe",
         description: 'Didact believes everyone is a teacher, and the strongest way to learn is as part of a community that teaches and learns together. A Lambda Labs Project that implements Node.js, Express, React, Redux, Material UI, and Passport.js as the main frameworks'
