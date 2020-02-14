@@ -58,7 +58,7 @@ const useStyles = makeStyles(theme => ({
     //   border: "2px solid #feda6a",
   },
   indicator: {
-    backgroundColor: '#d4d4dc',
+    backgroundColor: '#feda6a ',
     height: '5px'
   },
   titleDesktop: {

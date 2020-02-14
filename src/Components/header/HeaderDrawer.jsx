@@ -141,19 +141,19 @@ export default function HeaderDrawer({props}) {
             ) : (
                 <ArrowBackIcon style={{cursor: 'pointer', transform: 'rotate(90deg)'}} className={classes.menuButton} onClick={handleDrawerClose}/>
             )}
-            <Typography variant="h6" noWrap style={{fontWeight: 'bold', color: '#d4d4dc', fontFamily: "Open Sans",}} >
+            <Typography variant="h6" noWrap style={{fontWeight: 'bold', color: 'white', fontFamily: "Open Sans",}} >
                 Seth Nadu
             </Typography>
             {!open ? (
               <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', marginLeft: '15px'}}>
                 <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}}>
-                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: '#d4d4dc'}}>About</p>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: 'white'}}>About</p>
                 </NavLink>
                 <NavLink to="/projects" style={{textDecoration: 'none', color: 'inherit'}}>
-                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: '#d4d4dc'}}>Projects</p>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: 'white'}}>Projects</p>
                 </NavLink>
                 <NavLink to="/resume" style={{textDecoration: 'none', color: 'inherit'}}>
-                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: '#d4d4dc'}}>Resume</p>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: 'white'}}>Resume</p>
                 </NavLink>
               </div>
             ) : null}
