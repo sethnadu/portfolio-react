@@ -5,7 +5,7 @@ import ResumeCopy from '../resume/ResumeCopy'
 
 const Content = ({props, open}) => {
     return (
-        <div>
+        <div style={{"backgroundColor": "#F5F5F5"}}>
         {(() => {
             switch(props.page)
             {

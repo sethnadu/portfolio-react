@@ -11,37 +11,44 @@ import { DiJavascript1, DiResponsive } from 'react-icons/di';
 
 const useStyles = makeStyles({
     photoImage: {
-        borderRadius: '50%',
+        borderRadius: '15px',
         width: "100%",
-        maxWidth: '400px',
-        border: '2px solid #feda6a'
+        maxWidth: '500px',
+        minWidth: '300px',
+        height: "100%"
+        // border: '2px solid #feda6a'
     },
     photoImageOpen: {
         width: "100%",
         maxWidth: '400px',
-        borderRadius: 15,
-        border: '2px solid #feda6a'
+        borderRadius: '10px',
+        // border: '2px solid #feda6a'
     },
     desktopStyle: {
         display: 'flex',
         justifyContent: 'space-evenly',
-        alignItems: "center"
+        alignItems: "center",
+        flexDirection: 'column'
     },
     paragraphDiv: {
-        maxWidth: '500px',
+        maxWidth: '700px',
         padding: '20px',
-        backgroundColor: '#1d1e22',
-        color: "#d4d4dc",
-        border: '2px solid #feda6a',
-        fontFamily: "Open Sans"
+        paddingLeft: "30px",
+        // backgroundColor: '#1d1e22',
+        color: "#6B6B6B",
+        borderRadius: '10px',
+        // border: '2px solid #6B6B6B',
+        fontFamily: "Open Sans",
+        fontSize: '1rem',
+        fontWeight: "bold"
     },
     titleDesktop: {
         fontSize: '2.4rem',
-        color: '#feda6a' 
+        color: '#6B6B6B' 
     },
     titleMobile: {
-        fontSize: '1.6rem',
-        color: '#feda6a'
+        fontSize: '2rem',
+        color: '#6B6B6B'
     },
     iconDiv: {
         display: 'flex',
@@ -55,17 +62,61 @@ const useStyles = makeStyles({
         alignItems: 'center'
     },
     bottomIcons: {
-        backgroundColor: '#d4d4dc',
+        // backgroundColor: '#d4d4dc',
         padding: "10px",
         marginBottom: '10px',
         width: '200px',
-        border: '3px solid #feda6a',
-        color: "#1d1e22",
+        borderRadius: '10px',
+        // border: '3px solid #feda6a',
+        color: "#6B6B6B",
         fontFamily: "Open Sans"    
     },
     listItem: {
         marginLeft: '10px',
         marginBottom: '10px'
+    },
+    characteristics: {
+        fontSize: "1.6rem",
+        fontWeight: "bolder",
+        marginTop: '40px',
+        marginBottom: '30px',
+        display: "flex",
+        justifyContent: 'space-evenly',
+        width: '100%',
+        textAlign: 'center',
+        flexFlow: "wrap",
+        color: '#6B6B6B'
+    },
+    characteristicsMobile:{
+        fontSize: "1.6rem",
+        fontWeight: "bolder",
+        marginTop: '20px',
+        marginBottom: '40px',
+        display: "flex",
+        flexDirection: 'column',
+        justifyContent: 'space-evenly',
+        width: '100%',
+        textAlign: 'center',
+        flexFlow: "wrap",
+        color: '#6B6B6B'
+    },
+    characteristicOpenMobile:{
+        fontSize: "1rem",
+        fontWeight: "bolder",
+        marginTop: '20px',
+        marginBottom: '40px',
+        display: "flex",
+        flexDirection: 'column',
+        justifyContent: 'space-evenly',
+        width: '100%',
+        textAlign: 'center',
+        flexFlow: "wrap",
+        color: '#6B6B6B'
+    },
+    divider: {
+        borderBottom: '3px solid #6B6B6B',
+        width: '50%',
+        margin: 'auto'
     }
 });
 
@@ -76,11 +127,38 @@ const AboutPage = (props) => {
 
     return (
     <div style = {{width: "100%", height: "100vh", padding: '60px 20px 20px 20px', textAlign: "center"}}>
-        <h2 className={!phoneSize ? classes.titleDesktop : classes.titleMobile}>Who I Am</h2>
+        {/* <h2 className={!phoneSize ? classes.titleDesktop : classes.titleMobile}>Who I Am</h2> */}
         <div className={!phoneSize ? classes.desktopStyle : null}>
+            {!phoneSize ? 
+            <div className={classes.characteristics}>
+                <p>Hard-Working</p>
+                <p>|</p>
+                <p>Determined</p>
+                <p>|</p>
+                <p>Creative</p>
+                <p>|</p>
+                <p>Persistent</p>
+                <p>|</p>
+                <p>Problem-Solver</p>
+            </div>
+            :
+            <div className={!props.open ? classes.characteristicsMobile : classes.characteristicOpenMobile}>
+                <p>Hard-Working</p>
+                <div className = {classes.divider} />
+                <p>Determined</p> 
+                <div className = {classes.divider} />
+                <p>Creative</p> 
+                <div className = {classes.divider} />
+                <p>Persistent</p>
+                <div className = {classes.divider} />
+                <p>Problem-Solver</p>
+                <div className = {classes.divider} />
+            </div>
+            }
             <div>
                 <img className={phoneSize ? !props.open ? classes.photoImage : classes.photoImageOpen : classes.photoImage}src={Photo} alt='Seth Nadu'></img>
             </div>
+            <h2 className={!phoneSize ? classes.titleDesktop : classes.titleMobile}>My Story</h2>
             <div>
                 {phoneSize ? !props.open ? (
                     <ul style={{textAlign: "left"}} className={classes.paragraphDiv}>
@@ -132,7 +210,7 @@ const AboutPage = (props) => {
                     <p>Resuable Components with React</p>
                 </div>
                 <div className = {classes.bottomIcons}>
-                    <DiJavascript1 style = {{fontSize: '8rem',color: 'black'}}/>
+                    <DiJavascript1 style = {{fontSize: '8rem',color: '#6B6B6B'}}/>
                     <p>Javascript</p>
                     <p>Strong understanding in Javascript</p>
                 </div>
@@ -149,7 +227,7 @@ const AboutPage = (props) => {
                     <p>React</p>
                 </div>
                 <div className = {classes.bottomIcons}>
-                    <DiJavascript1 style = {{fontSize: '3rem',color: 'black'}}/>
+                    <DiJavascript1 style = {{fontSize: '3rem',color: '#6B6B6B'}}/>
                     <p>Javascript</p>
                 </div>
                 <div className = {classes.bottomIcons} style = {{marginBottom: '20px'}}>
@@ -165,7 +243,7 @@ const AboutPage = (props) => {
                     <p style = {{fontSize: '1rem'}}>Resuable Components with React</p>
                 </div>
                 <div className = {classes.bottomIcons}>
-                    <DiJavascript1 style = {{fontSize: '8rem', color: 'black'}}/>
+                    <DiJavascript1 style = {{fontSize: '8rem', color: '#6B6B6B'}}/>
                     <p style = {{fontSize: '1.4rem'}}>Javascript</p>
                     <p style = {{fontSize: '1rem'}}>Strong understanding in Javascript</p>
                 </div>

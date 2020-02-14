@@ -69,7 +69,7 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     margin: "0 auto",
     paddingBottom: "20px",
-    borderBottom: "2px solid #d4d4dc"
+    borderBottom: "2px solid #6B6B6B"
   },
   gridLarge: {
     width: "100%",
@@ -81,7 +81,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: "500px",
     margin: "0 auto",
     paddingBottom: "20px",
-    borderBottom: "2px solid #d4d4dc"
+    borderBottom: "2px solid #6B6B6B"
   },
   gridMobileSmall: {
     width: "100%",
@@ -93,11 +93,11 @@ const useStyles = makeStyles(theme => ({
     fontSize: "1.4rem"
   },
   icon: {
-    color: "#1d1e22",
-    backgroundColor: "#feda6a"
+    // color: "#1d1e22",
+    backgroundColor: "#6B6B6B"
   },
   textIcon: {
-    color: "#feda6a"
+    color: "#6B6B6B"
   },
   phoneSkillsChange: {
     display: "flex",
@@ -110,16 +110,16 @@ const useStyles = makeStyles(theme => ({
     width: "80px"
   },
   gitHubGraphMobile: {
-    width: "100%"
+    width: "90%"
   },
   titleMobile: {
     fontSize: "1.4rem",
-    color: "#feda6a",
+    color: "#6B6B6B",
     paddingTop: "20px"
   },
   titleDesktop: {
     fontSize: "2.0rem",
-    color: "#feda6a",
+    color: "#6B6B6B",
     paddingTop: "20px"
   },
   gitHubInformation: {
@@ -128,7 +128,7 @@ const useStyles = makeStyles(theme => ({
     margin: "10px auto",
     justifyContent: "space-evenly",
     maxWidth: "700px",
-    width: "100%"
+    width: "100%",
   }
 }));
 
@@ -266,48 +266,48 @@ const Skills = ({ phoneSize, open }) => {
         <div>
           <h2 className={classes.titleDesktop}>GitHub Contribution Graph</h2>
           <div className={classes.gitHubInformation}>
-            <a style={{textDecoration: "none"}} href="https://github.com/sethnadu" alt="github"><p style={{ color: "#feda6a" }}>{gitHubInfo && gitHubInfo.login}</p></a>
-            <p style={{ color: "#d4d4dc" }}>
+            <a style={{textDecoration: "none"}} href="https://github.com/sethnadu" alt="github"><p style={{ color: "black" }}>{gitHubInfo && gitHubInfo.login}</p></a>
+            <p style={{ color: "#6B6B6B" }}>
               Repos:{" "}
-              <span style={{ color: "#feda6a" }}>
+              <span style={{ color: "black" }}>
                 {gitHubInfo && gitHubInfo.public_repos}
               </span>
             </p>
-            <p style={{ color: "#d4d4dc" }}>
+            <p style={{ color: "#6B6B6B" }}>
               Followers:{" "}
-              <span style={{ color: "#feda6a" }}>
+              <span style={{ color: "black" }}>
                 {gitHubInfo && gitHubInfo.followers}
               </span>
             </p>
-            <p style={{ color: "#d4d4dc" }}>
+            <p style={{ color: "#6B6B6B" }}>
               Following:{" "}
-              <span style={{ color: "#feda6a" }}>
+              <span style={{ color: "black" }}>
                 {gitHubInfo && gitHubInfo.following}
               </span>
             </p>
           </div>
-          <img alt="Github Graph" src="http://ghchart.rshah.org/sethnadu" />
+          <img alt="Github Graph" src="http://ghchart.rshah.org/sethnadu" style={{"backgroundColor":"#6B6B6B", "padding": "10px", "borderRadius": "10px"}}/>
         </div>
       ) : !open ? (
         <div>
           <h2 className={classes.titleMobile}>GitHub Contribution Graph</h2>
           <div>
-            <p style={{ color: "#feda6a" }}>{gitHubInfo && gitHubInfo.login}</p>
-            <p style={{ color: "#d4d4dc" }}>
+            <p style={{ color: "black" }}>{gitHubInfo && gitHubInfo.login}</p>
+            <p style={{ color: "#6B6B6B" }}>
               Repos:{" "}
-              <span style={{ color: "#feda6a" }}>
+              <span style={{ color: "black" }}>
                 {gitHubInfo && gitHubInfo.public_repos}
               </span>
             </p>
-            <p style={{ color: "#d4d4dc" }}>
+            <p style={{ color: "#6B6B6B" }}>
               Followers:{" "}
-              <span style={{ color: "#feda6a" }}>
+              <span style={{ color: "black" }}>
                 {gitHubInfo && gitHubInfo.followers}
               </span>
             </p>
-            <p style={{ color: "#d4d4dc" }}>
+            <p style={{ color: "#6B6B6B" }}>
               Following:{" "}
-              <span style={{ color: "#feda6a" }}>
+              <span style={{ color: "black" }}>
                 {gitHubInfo && gitHubInfo.following}
               </span>
             </p>
@@ -316,32 +316,33 @@ const Skills = ({ phoneSize, open }) => {
             className={classes.gitHubGraphMobile}
             alt="Github Graph"
             src="http://ghchart.rshah.org/sethnadu"
+            style={{"backgroundColor":"#6B6B6B", "padding": "10px", "borderRadius": "10px"}}
           />
         </div>
       ) : (
         <div style={{ width: "100px", textAlign: "left" }}>
           <div style={{ textAlign: "left" }}>
-            <p style={{ color: "#feda6a" }}>{gitHubInfo && gitHubInfo.login}</p>
-            <p style={{ color: "#d4d4dc" }}>
+            <p style={{ color: "black" }}>{gitHubInfo && gitHubInfo.login}</p>
+            <p style={{ color: "#6B6B6B" }}>
               Repos:{" "}
-              <span style={{ color: "#feda6a" }}>
+              <span style={{ color: "black" }}>
                 {gitHubInfo && gitHubInfo.public_repos}
               </span>
             </p>
-            <p style={{ color: "#d4d4dc" }}>
+            <p style={{ color: "#6B6B6B" }}>
               Followers:{" "}
-              <span style={{ color: "#feda6a" }}>
+              <span style={{ color: "black" }}>
                 {gitHubInfo && gitHubInfo.followers}
               </span>
             </p>
-            <p style={{ color: "#d4d4dc" }}>
+            <p style={{ color: "#6B6B6B" }}>
               Following:{" "}
-              <span style={{ color: "#feda6a" }}>
+              <span style={{ color: "black" }}>
                 {gitHubInfo && gitHubInfo.following}
               </span>
             </p>
           </div>
-          <FaChartBar style={{ fontSize: "1.8rem", color: "#d4d4dc" }} />
+          <FaChartBar style={{ fontSize: "1.8rem", color: "#6B6B6B" }} />
         </div>
       )}
     </div> 

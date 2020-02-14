@@ -60,9 +60,9 @@ const Header = ({props}) => {
           <Typography variant="h6" className={classes.title}>
             Seth Nadu
           </Typography>
-          <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}}><button className={classes.buttonLinks}>About</button></NavLink>
-          <NavLink to="/" style={{textDecoration: 'none', color: 'inherit'}}><button className={classes.buttonLinks}>Projects</button></NavLink>
-          <NavLink to="/" style={{textDecoration: 'none', color: 'inherit'}}><button className={classes.buttonLinks}>Contact</button></NavLink>
+          <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}} activeStyle={{color: '#feda6a '}}><button className={classes.buttonLinks}>About</button></NavLink>
+          <NavLink to="/" style={{textDecoration: 'none', color: 'inherit'}} activeStyle={{color: '#feda6a '}}><button className={classes.buttonLinks}>Projects</button></NavLink>
+          <NavLink to="/" style={{textDecoration: 'none', color: 'inherit'}} activeStyle={{color: '#feda6a '}}><button className={classes.buttonLinks}>Contact</button></NavLink>
         </Toolbar>
       </AppBar>
     </div>

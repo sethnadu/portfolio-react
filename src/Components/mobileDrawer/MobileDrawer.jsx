@@ -24,8 +24,8 @@ const useStyles = makeStyles(theme => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor:"#1d1e22",
-    borderBottom:'2px solid #feda6a', 
+    backgroundColor:"#6B6B6B",
+    // borderBottom:'2px solid #feda6a', 
     color: '#d4d4dc',
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
@@ -35,8 +35,8 @@ const useStyles = makeStyles(theme => ({
 
   appBarClose: {
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor:"#1d1e22",
-    borderBottom:'2px solid #feda6a', 
+    backgroundColor:"#6B6B6B",
+    // borderBottom:'2px solid #feda6a', 
     color: '#d4d4dc',
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
@@ -58,8 +58,8 @@ const useStyles = makeStyles(theme => ({
   },
   drawerOpen: {
     width: drawerWidth,
-    backgroundColor: '#393f4d',
-    borderRight: "3px solid #feda6a",
+    backgroundColor: '#6B6B6B',
+    // borderRight: "3px solid #feda6a",
     overflowX: 'hidden',
     overflowY: 'hidden',
     transition: theme.transitions.create('width', {
@@ -73,8 +73,8 @@ const useStyles = makeStyles(theme => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
     overflowX: 'hidden',
-    backgroundColor: "#1d1e22",
-    borderRight: "3px solid #feda6a",
+    backgroundColor: "#6B6B6B",
+    // borderRight: "3px solid #feda6a",
     width: theme.spacing(7) + 1,
     [theme.breakpoints.up('sm')]: {
       width: theme.spacing(9) + 1,
@@ -90,9 +90,10 @@ const useStyles = makeStyles(theme => ({
   content: {
     width: "100%",
     height: '100%',
-    backgroundColor: "#393f4d"
+    backgroundColor: "#F5F5F5"
   },
   contentOpen: {
+    backgroundColor: "#F5F5F5",
     background: "rgba(0, 0, 0, 0.9)",
     filter: "brightness(30%)",
     zIndex: 100,

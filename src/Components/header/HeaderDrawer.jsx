@@ -29,11 +29,11 @@ const useStyles = makeStyles(theme => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor:"#1d1e22",
+    backgroundColor:"#6B6B6B",
     fontFamily: "Open Sans",
-    color: '#feda6a',
+    color: '#d4d4dc',
     boxShadow: 'none',
-    borderBottom:'2px solid #1d1e22', 
+    // borderBottom:'2px solid #1d1e22', 
     transition: theme.transitions.create(['height', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -42,9 +42,9 @@ const useStyles = makeStyles(theme => ({
 
   appBarClose: {
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor:"#1d1e22",
-    borderBottom:'2px solid #feda6a', 
-    color: '#feda6a',
+    backgroundColor:"#6B6B6B",
+    // borderBottom:'2px solid #feda6a', 
+    color: '#d4d4dc',
     transition: theme.transitions.create(['height', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -63,8 +63,8 @@ const useStyles = makeStyles(theme => ({
   },
   drawerOpen: {
     width: "100%",
-    backgroundColor: '#1d1e22',
-    borderBottom: "3px solid #feda6a",
+    backgroundColor: '#6B6B6B',
+    // borderBottom: "3px solid #feda6a",
     overflowX: 'hidden',
     overflowY: 'hidden',
     height: '150px',
@@ -80,8 +80,8 @@ const useStyles = makeStyles(theme => ({
     }),
     overflowX: 'hidden',
     overflowY: 'hidden',
-    backgroundColor: "#1d1e22",
-    borderBottom: "3px solid #feda6a", 
+    backgroundColor: "#6B6B6B",
+    // borderBottom: "3px solid #feda6a", 
     width: "100%",
     height: '0'
   },
@@ -141,19 +141,19 @@ export default function HeaderDrawer({props}) {
             ) : (
                 <ArrowBackIcon style={{cursor: 'pointer', transform: 'rotate(90deg)'}} className={classes.menuButton} onClick={handleDrawerClose}/>
             )}
-            <Typography variant="h6" noWrap style={{fontWeight: 'bold', color: '#d4d4dc', fontFamily: "Open Sans",}} >
+            <Typography variant="h6" noWrap style={{fontWeight: 'bold', color: 'white', fontFamily: "Open Sans",}} >
                 Seth Nadu
             </Typography>
             {!open ? (
               <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', marginLeft: '15px'}}>
-                <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}}>
-                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: '#d4d4dc'}}>About</p>
+                <NavLink to="/about" style={{textDecoration: 'none', color: 'white'}} activeStyle={{color: '#feda6a '}}>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px"}}>About</p>
                 </NavLink>
-                <NavLink to="/projects" style={{textDecoration: 'none', color: 'inherit'}}>
-                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: '#d4d4dc'}}>Projects</p>
+                <NavLink to="/projects" style={{textDecoration: 'none', color: 'white'}} activeStyle={{color: '#feda6a '}}>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px"}}>Projects</p>
                 </NavLink>
-                <NavLink to="/resume" style={{textDecoration: 'none', color: 'inherit'}}>
-                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: '#d4d4dc'}}>Resume</p>
+                <NavLink to="/resume" style={{textDecoration: 'none', color: 'white'}} activeStyle={{color: '#feda6a '}}>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px"}}>Resume</p>
                 </NavLink>
               </div>
             ) : null}

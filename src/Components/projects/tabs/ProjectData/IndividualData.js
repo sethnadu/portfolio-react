@@ -39,7 +39,7 @@ export const IndividualData = [
         siteIcon: <Icon src={HarryIcon} alt="Harry Potter Fan Wiki Favicon" />,
         github: "https://github.com/sethnadu/harrypotterv2",
         description: 'Built with React and Redux, using ',
-        apiLink: <a style={{color: '#feda6a', textDecoration: "none"}} href="https://www.potterapi.com/" alt="potterapi">PotterApi</a>
+        apiLink: <a style={{color: 'black', textDecoration: "none"}} href="https://www.potterapi.com/" alt="potterapi">PotterApi</a>
     },
     {
         name: 'Seinfeld Trivia of Quotes',
@@ -49,7 +49,7 @@ export const IndividualData = [
         siteIcon: <Icon src={SeinfeldIcon} alt="Seinfeld Trivia of Quotes Favicon" />,
         github: "https://github.com/sethnadu/React-Redux-App",
         description: `Built with React and Redux, using `,
-        apiLink: <a style={{color: '#feda6a', textDecoration: "none"}} href="https://seinfeld-quotes.herokuapp.com/" alt="seinfeld-quotes-api">https://seinfeld-quotes.herokuapp.com/</a>
+        apiLink: <a style={{color: 'black', textDecoration: "none"}} href="https://seinfeld-quotes.herokuapp.com/" alt="seinfeld-quotes-api">https://seinfeld-quotes.herokuapp.com/</a>
     },
     {
         name: 'Stream Finder',
@@ -59,6 +59,6 @@ export const IndividualData = [
         siteIcon: <IconStream src={StreamIcon} alt="Stream Finder" />,
         github: "https://github.com/sethnadu/NotePad",
         description: `Built with React and Redux, using `,
-        apiLink: <a style={{color: '#feda6a', textDecoration: "none"}} href="https://rapidapi.com/utelly/api/utelly/endpoints" alt="Utelly">https://rapidapi.com/utelly/api/utelly</a>
+        apiLink: <a style={{color: 'black', textDecoration: "none"}} href="https://rapidapi.com/utelly/api/utelly/endpoints" alt="Utelly">https://rapidapi.com/utelly/api/utelly</a>
     },
 ]

@@ -73,21 +73,21 @@ const FullList = ({props, open, handleDrawerClose, handleDrawerOpen}) => {
                 </div>
                 </NavLink>
 
-                <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}}>
+                <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}} activeStyle={{color: '#feda6a '}}>
                 <div className={classes.iconDiv}>
                     <InfoIcon className={classes.menuButton}/>
                     <p style={{fontSize: '1.0rem', margin: 0}}>About</p>
                 </div>
                 </NavLink>
 
-                <NavLink to="/projects" style={{textDecoration: 'none', color: 'inherit'}}>
+                <NavLink to="/projects" style={{textDecoration: 'none', color: 'inherit'}} activeStyle={{color: '#feda6a '}}>
                 <div className={classes.iconDiv}>
                     <CodeIcon className={classes.menuButton}/>
                     <p style={{fontSize: '1.0rem', margin: 0}}>Projects</p>
                 </div>
                 </NavLink>
 
-                <NavLink to="/resume" style={{textDecoration: 'none', color: 'inherit'}}>
+                <NavLink to="/resume" style={{textDecoration: 'none', color: 'inherit'}} activeStyle={{color: '#feda6a '}}>
                 <div className={classes.iconDiv}>
                     <DescriptionIcon className={classes.menuButton}/>
                     <p style={{fontSize: '1.0rem', margin: 0}}>Resume</p>

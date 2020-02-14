@@ -15,10 +15,10 @@ import {OpenProjectGif} from './ProjectStyles'
 const useStyles = makeStyles({
   card: {
     width: phoneSize => phoneSize ? "275px" : "350px",
-    backgroundColor: '#1d1e22',
-    color: "#d4d4dc",
+    // backgroundColor: '#1d1e22',
+    color: "#6B6B6B",
     fontFamily: "Open Sans", 
-    border: '2px solid #feda6a',
+    // border: '2px solid #feda6a',
     marginBottom: "20px",
     height: "100%"
 
@@ -26,7 +26,7 @@ const useStyles = makeStyles({
   media: {
     height: 200,
     objectFit: 'cover',
-    borderBottom: '2px solid #feda6a',
+    // borderBottom: '2px solid #feda6a',
   },
   titleDiv : {
     minHeight: '30px'
@@ -46,7 +46,7 @@ const useStyles = makeStyles({
   },
   gitHubIcon: {
     fontSize: '3.1rem',
-    color: '#feda6a'
+    color: '#6B6B6B'
   },
 
 
@@ -79,10 +79,10 @@ export default function EachProject({el, phoneSize, open}) {
             </div>   
             </CardContent>
         <CardActions>
-            <button style={{backgroundColor: '#1d1e22', border: 'none'}}>
+            <button style={{backgroundColor: '#fff', border: 'none'}}>
             <a href={el.site} alt='site'>{el.siteIcon}</a>
             </button>
-            <button style={{backgroundColor: '#1d1e22', border: 'none'}}>
+            <button style={{backgroundColor: '#fff', border: 'none'}}>
             <a href={el.github} alt="github"><GitHubIcon className={classes.gitHubIcon}/></a>
             </button>
         </CardActions>

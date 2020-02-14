@@ -52,21 +52,23 @@ const useStyles = makeStyles(theme => ({
     margin: "0 auto",
   },
   appBar: {
-      backgroundColor: '#393f4d',
+      backgroundColor: '#6B6B6B',
       boxShadow: 'none',
+      borderRadius: '10px'
     //   border: "2px solid #feda6a",
   },
   indicator: {
-    backgroundColor: '#feda6a',
+    backgroundColor: '#feda6a ',
+    height: '5px'
   },
   titleDesktop: {
     fontSize: '2.4rem',
-    color: '#feda6a' 
+    color: '#6B6B6B' 
 },
-titleMobile: {
-    fontSize: '1.6rem',
-    color: '#feda6a'
-},
+  titleMobile: {
+      fontSize: '1.6rem',
+      color: '#6B6B6B'
+  },
 }));
 
 
