@@ -66,28 +66,28 @@ const SideBar = ({props, open, handleDrawerClose, handleDrawerOpen}) => {
         </div>
         {!open ? (<Divider style={{backgroundColor: "#B0B0B0", opacity: '.7', height: '2px'}}/>):(<Divider style={{backgroundColor: "#B0B0B0", opacity: '.7', height: '2px'}}/>)}
         <List>
-            <NavLink to="/" style={{textDecoration: 'none', color: 'inherit'}}>
+            <NavLink to="/" style={{textDecoration: 'none', color: 'inherit'}} >
             <div className={classes.iconDiv}> 
                 <HomeIcon className={classes.menuButton}/>
                 <p style={{fontSize: '1.2rem'}}>Home</p>
             </div>
             </NavLink>
 
-            <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}}>
+            <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}} activeStyle={{color: '#feda6a '}}>
             <div className={classes.iconDiv}>
                 <InfoIcon className={classes.menuButton}/>
                 <p style={{fontSize: '1.2rem'}}>About</p>
             </div>
             </NavLink>
 
-            <NavLink to="/projects" style={{textDecoration: 'none', color: 'inherit'}}>
+            <NavLink to="/projects" style={{textDecoration: 'none', color: 'inherit'}} activeStyle={{color: '#feda6a '}}>
             <div className={classes.iconDiv}>
                 <CodeIcon className={classes.menuButton}/>
                 <p style={{fontSize: '1.2rem'}}>Projects</p>
             </div>
             </NavLink>
 
-            <NavLink to="/resume" style={{textDecoration: 'none', color: 'inherit'}}>
+            <NavLink to="/resume" style={{textDecoration: 'none', color: 'inherit'}} activeStyle={{color: '#feda6a '}}>
             <div className={classes.iconDiv}>
                 <DescriptionIcon className={classes.menuButton}/>
                 <p style={{fontSize: '1.2rem'}}>Resume</p>

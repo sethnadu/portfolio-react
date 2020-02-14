@@ -146,14 +146,14 @@ export default function HeaderDrawer({props}) {
             </Typography>
             {!open ? (
               <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', marginLeft: '15px'}}>
-                <NavLink to="/about" style={{textDecoration: 'none', color: 'inherit'}}>
-                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: 'white'}}>About</p>
+                <NavLink to="/about" style={{textDecoration: 'none', color: 'white'}} activeStyle={{color: '#feda6a '}}>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px"}}>About</p>
                 </NavLink>
-                <NavLink to="/projects" style={{textDecoration: 'none', color: 'inherit'}}>
-                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: 'white'}}>Projects</p>
+                <NavLink to="/projects" style={{textDecoration: 'none', color: 'white'}} activeStyle={{color: '#feda6a '}}>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px"}}>Projects</p>
                 </NavLink>
-                <NavLink to="/resume" style={{textDecoration: 'none', color: 'inherit'}}>
-                  <p style={{fontSize: '1.0rem', margin: "0 10px", color: 'white'}}>Resume</p>
+                <NavLink to="/resume" style={{textDecoration: 'none', color: 'white'}} activeStyle={{color: '#feda6a '}}>
+                  <p style={{fontSize: '1.0rem', margin: "0 10px"}}>Resume</p>
                 </NavLink>
               </div>
             ) : null}
