@@ -65,7 +65,7 @@ const ResumeCopy = ({props, open}) => {
         {!phoneSize ? 
         <div style={{margin: "60px 60px -80px 25px", display: "flex", flexDirection: 'row', justifyContent: "flex-end"}}>
             <a href={Resume_PDF} alt="Seth Nadu Resume" download="Seth_Nadu_Resume" style={{textDecoration:"none"}}>
-                <h3 style={{color: 'white'}}>Download</h3>
+                <h3 style={{color: '#6B6B6B'}}>Download</h3>
             </a>
         </div> : null}
         <Container>
