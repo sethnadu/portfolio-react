@@ -11,15 +11,17 @@ import { DiJavascript1, DiResponsive } from 'react-icons/di';
 
 const useStyles = makeStyles({
     photoImage: {
-        borderRadius: '50%',
+        borderRadius: '15px',
         width: "100%",
-        maxWidth: '400px',
+        maxWidth: '500px',
+        minWidth: '400px',
+        height: "100%"
         // border: '2px solid #feda6a'
     },
     photoImageOpen: {
         width: "100%",
         maxWidth: '400px',
-        borderRadius: 15,
+        borderRadius: '10px',
         // border: '2px solid #feda6a'
     },
     desktopStyle: {
